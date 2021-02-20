@@ -1,0 +1,3114 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Programiranje 2 :: Matematički fakultet, Univerzitet u Beogradu </title>
+    <link rel="stylesheet" href="prezentacija/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="prezentacija/css/p2.css">
+    <script src="prezentacija/scripts/jquery-1.11.2.min.js"></script>
+    <script src="prezentacija/scripts/jquery-ui.js"></script>
+    <script src="prezentacija/scripts/init.js"></script>
+    <script src="prezentacija/scripts/jquery.address-1.6.min.js"></script>
+</head>
+
+<body>
+    <div id='glavni_omotac'>
+        <div id='dekoracija'> </div>
+
+        <!-- ################### NASLOV - POCETAK ##################### -->
+        <div id='zaglavlje'>
+            <h2 id='naslov'> PROGRAMIRANJE 2</h2>
+        </div>
+        <!-- ################### NASLOV - KRAJ ##################### -->
+
+        <div id='kartice'>
+
+            <!-- ################### NAVIGACIJA - POCETAK ##################### -->
+            <ul>
+                <li><a href='#o_kursu'> o kursu </a></li>
+                <li><a href='#obaveze_studenata'> obaveze studenata </a></li>
+                <li><a href='#predavanja'> predavanja </a></li>
+                <li><a href='#vezbe'> vežbe </a></li>
+                <li><a href='#praktikumi'> praktikumi </a></li>
+                <li><a href='#obavestenja'> obaveštenja </a></li>
+            </ul>
+            <!-- ################### NAVIGACIJA - KRAJ ##################### -->
+
+
+            <!-- ################### O KURSU - POCETAK ##################### -->
+            <div id='o_kursu'>
+                <div>
+                    <p style='text-align: justify;'> U okviru kursa Programiranje 2 obrađuju se napredni pojmovi
+                        proceduralnog
+                        programiranja i osnovni pojmovi algoritama i struktura podataka. U okviru naprednih pojmova
+                        proceduralnog programiranja, akcenat je na razumevanju funkcijskih poziva, rekurzije,
+                        upravljanju memorijom
+                        i primeni tih tehnika u rešavanju problema. U okviru osnovnih pojmova algoritama i struktura
+                        podataka,
+                        akcenat je na razumevanju pojma složenosti algoritma, osnovnim algoritmima za pretragu i
+                        sortiranje,
+                        dinamičkim strukturama podataka poput listi i stabala i algoritmima vezanim za njih. Kurs
+                        osposobljava
+                        studente da prepoznaju prilike za primenu naučenih tehnika, da na osnovu njihovih svojstava
+                        od više primenljivih tehnika izaberu bolje i da ih ispravno implementiraju.
+                    </p>
+                </div>
+
+
+
+
+                <div>
+                    <h4 class='mali_naslov_sekcije'> Predmetni nastavnici: </h4>
+                    <ul>
+                        <li> <a href='http://poincare.matf.bg.ac.rs/~gordana/'> dr Gordana Pavlović-Lažetić </a></li>
+                        <li> <a href='http://poincare.matf.bg.ac.rs/~nikolic/'> dr Mladen Nikolić </a> </li>
+                        <li> <a href='http://poincare.matf.bg.ac.rs/~jgraovac/'> dr Jelena Graovac </a> </li>
+                        <li> <a href='http://poincare.matf.bg.ac.rs/~ivan/'> dr Ivan Čukić </a> </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class='mali_naslov_sekcije'> Asistenti: </h4>
+                    <ul>
+                        <li> <a href='http://www.matf.bg.ac.rs/p/bozica-kalinic/pocetna/'> Božica Kalinić </a> </li>
+                        <li> <a href='http://poincare.matf.bg.ac.rs/~nevena_ciric/'> Nevena Ćirić </a> </li>
+                        <li> <a href='http://www.matf.bg.ac.rs/p/filip-vidojevic/pocetna/'> Filip Vidojević </a> </li>
+                        <li> <a href='http://poincare.matf.bg.ac.rs/~ivan_drecun/'> Ivan Drecun </a> </li>
+                        <li> <a href='http://www.matf.bg.ac.rs/p/jelena-markovic/nastava/'> Jelena Marković </a> </li>
+                        <li> Miodrag Radojević </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class='mali_naslov_sekcije'> Osnovna literatura: </h4>
+                    <ul>
+                        <li>
+                            <a href='http://poincare.matf.bg.ac.rs/~janicic//courses/p2-a4.pdf'> Predrag Janičić, Filip
+                                Marić: Programiranje 2 </a>
+                        </li>
+
+                        <li>
+                            <a href='http://poincare.matf.bg.ac.rs/~janicic//books/p1.pdf'> Filip Marić, Predrag
+                                Janičić: Programiranje 1 </a>
+                        </li>
+
+                        <li>
+                            <a href="zbirka/p2_zbirka.pdf"> Milena Vujošević Janičić, Jelena Graovac, Nina Radojičić,
+                                Ana Spasić, Mirko Spasić, Anđelka Zečević: Zbirka zadataka sa rešenjima </a> <br>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class='mali_naslov_sekcije'> Dodatna literatura: </h4>
+                    <ul>
+                        <li>
+                            Brian Kernighan, Dennis Ritchie: The C Programming Language
+                        </li>
+                        <li>
+                            Robert Sedgewick: Algorithms in C
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- ################### O KURSU - KRAJ ##################### -->
+
+
+            <!-- ################### OBAVEZE STUDENATA - POCETAK ##################### -->
+            <div id='obaveze_studenata'>
+
+	    	<!-- PRAVILA ZA SKOLSKU GODINU 2019/2020 -->
+		<div>
+	    	<h4 class='mali_naslov_sekcije'> Predispitne obaveze: </h4>
+		<p> Osvojeni poeni na praktikumima će biti skalirani na 5 poena koliko inače nosi aktivnost na praktikumima. </p>
+		</div>
+
+		<div>
+		<h4 class='mali_naslov_sekcije'> Završni ispit: </h4>
+		<p> Ispit u celini nosi 100 poena i oni će biti raspodeljeni na sledeći način:
+			<ul>
+				<li> Teorijski deo - nosi 50 poena (prag 30%) i radi se 1h </li>
+				<li> Kvalifikacioni deo - nosi 15 poena (prag 50%) i radi se 1h (2 zadatka) </li>
+ 				<li> Praktični deo - nosi 35 poena (prag 30%) i radi se 2h (3 zadatka) </li>
+			</ul>
+		</p>
+		</div>
+
+		<span style='font-weight: bold'>Pravila polaganja završnog ispita:</span>
+		<ul>
+                        <li>Da bi student mogao da izađe na praktični deo ispita, neophodno je da prethodno položi
+                            teorijski i kvalifikacioni deo ispita</li>
+                        <li>Svi delovi završnog ispita mogu se polagati u jednom ispitnom roku</li>
+                        <li>Svi delovi završnog ispita mogu se polagati u više ispitnih rokova </li>
+			    <ul>
+				<li> Jednom položen bilo koji od delova ispita važi u svim narednim rokovima. </li>
+				<li> Uslov za izlazak na praktični deo ispita se stiče tek nakon uspešno položenog teorijskog i
+				     kvalifikacionog dela.
+				</li>
+				<li>Ispit je potrebno prijaviti u svim rokovima u kojima student izlazi na neki deo ispita </li>
+                            </ul>
+			</li>
+		</ul>
+
+<!-- PRAVILA ZA REGULARNU SKOLSKU GODINU
+                <div>
+                    <h4 class='mali_naslov_sekcije'> Predispitne obaveze: </h4>
+                    <ul>
+                        <li> aktivnost na praktikumima: 5 poena </li>
+                        <li> kolokvijum u kolokvijumskoj nedelji: 35 poena (20 poena teorija, 15 poena zadaci) </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class='mali_naslov_sekcije'> Završni ispit: </h4>
+                    <ul>
+                        <li> teorija: 30 poena <span style='font-weight: bold'> (prag 30%) </span> </li>
+                        <li> zadaci: 10 poena <span style='font-weight: bold'> (kvalifikacioni - prag 50%) </span> + 25
+                            poena <span style='font-weight: bold'> (praktični - prag 30%) </span> </li>
+                    </ul>
+                    <ul> <span style='font-weight: bold'>Pravila polaganja završnog ispita:</span>
+                        <li>Da bi student mogao da izađe na praktični deo ispita, neophodno je da prethodno položi
+                            teorijski i kvalifikacioni deo ispita</li>
+                        <li>Svi delovi završnog ispita mogu se polagati u jednom ispitnom roku</li>
+                        <li>Svi delovi završnog ispita mogu se polagati u dva ispitna roka, po sledećim pravilima: </li>
+                        <ul>
+                            <li>Ukoliko student položi teoriju i kvalifikacioni deo, a ne položi praktični deo ispita u
+                                jednom roku, ima mogućnost izlaska na praktični deo i u prvom narednom roku (teorija i
+                                kvalifikacioni deo mu se priznaju) </li>
+                            <li>Ukoliko student položi teoriju a ne položi kvalifikacioni deo u jednom roku, ima
+                                mogućnost izlaska na kvalifikacioni i praktični deo ispita i u prvom narednom roku
+                                (teorija mu se priznaje)</li>
+                            <li>Ispit je potrebno prijaviti u oba roka
+                        </ul>
+                        <li>Napomena: ukoliko student ne položi teoriju, prethodna pravila očigledno ne pružaju nikakve
+                            pogodnosti.</li>
+                    </ul>
+
+                </div>
+-->
+
+                <div>
+                    <h4 class='mali_naslov_sekcije'> Primeri: </h4>
+                    <ul>
+<!--
+                        <li> Primer teorijskog dela kolokvijuma (<a
+                                href="2016/primeri_zadataka/kolokvijumteorija.pdf">OVDE</a>) </li>
+
+                        <li> Primer kolokvijuma zadaci (<a
+                                href="2016/primeri_zadataka/P2primerKolokvijuma.pdf">OVDE</a>) </li>
+
+                        <li> Primer zavrsnog ispita (<a href="2015/primeriZadataka/P2primerIspita2015.pdf">OVDE</a>) </li>
+-->
+                        <li> Primer teorijskog dela ispita (<a href="2016/primeri_zadataka/ispitteorija.pdf">OVDE</a>)
+                        </li>
+                        <li> Primer kvalifikacionog dela ispita (<a href="primer_kvalifikacioni_2020.pdf">OVDE</a>) </li>
+			<li> Primer praktičnog dela ispita (<a href="primer_prakticni_2020.pdf">OVDE</a>) </li>
+                        <li> Primeri praktičnog dela ispita (<a href="zbirka/p2_zbirka.pdf#page=346">OVDE</a>) </li>
+                    </ul>
+                </div>
+
+
+                <!-- <div>
+                    	<h4 class='mali_naslov_sekcije'> Kolokvijum </h4>
+                        <ul>
+                            <li> <a href="2017/kolokvijum/zadaci.pdf"> zadaci </a> </li>
+                        </ul>
+                    </div> -->
+            </div>
+
+            <!-- ################### OBAVEZE STUDENATA - KRAJ ##################### -->
+
+
+
+            <!-- ################### PREDAVANJA - POCETAK ##################### -->
+            <div id='predavanja'>
+              <div>
+                  <h4 class='mali_naslov_sekcije'> Slajdovi sa predavanja za 3. tok - prof. Jelena Graovac</h4>
+                  <ul>
+                      <li><a href="2020/predavanja/3_tok/uvod.pdf">Uvod</a>
+                      <li><a href="2020/predavanja/3_tok/01_doseg_i_zivotni_vek.pdf">Doseg i životni vek promenljivih</a>
+                      <li><a href="2020/predavanja/3_tok/01_bitovski_operatori.pdf">Bitovski operatori</a>
+                      <li><a href="2020/predavanja/3_tok/02_organizacija_memorije.pdf">Organizacija memorije</a>
+                      <li><a href="2020/predavanja/3_tok/02_rekurzija.pdf">Rekurzija</a>
+                      <li><a href="2020/predavanja/3_tok/03_04_slozenost.pdf">Efikasnost programa i složenost izračunavanja</a>
+                      <li><a href="2020/predavanja/3_tok/05_06_pretrazivanje_sortiranje.pdf">Pretraživanje i sortiranje</a>
+                      <li><a href="2020/predavanja/3_tok/07_pokazivaci_dinamicka_alokacija.pdf">Pokazivači i dinamička alokacija memorije.</a>
+                      <li><a href="2020/predavanja/3_tok/08_bibliotecke_funkcije.pdf">Bibliotečke funkcije bsearch i qsort.</a>
+                      <li><a href="2020/predavanja/3_tok/09_10_liste_stek_red.pdf">Dinamičke strukture podataka: liste, red, stek.</a>
+                      <li><a href="2020/predavanja/3_tok/11_12_stabla.pdf">Dinamičke strukture podataka: stabla.</a>
+                      <li><a href="2020/predavanja/3_tok/13_formalna_definicija_algoritma.pdf">Formalna definicija algoritma - (3. glava iz knjige P1)</a>
+
+
+                  </ul>
+                  <a href="https://drive.google.com/open?id=12Y8e62Rv8hu1Uk6I_5dW-WWzzbq4TwVTYd1eMm97t6o">Anonimna anketa o predavanjima iz P2 kod prof. Graovac</a>
+              </div>
+                    <!------------------------------------------------------------
+                         <h4 class='naslov'> ČAS 1</h4>
+							<ul>
+								<li>Uvod: o kursu i obavezama na kursu.
+								<li>Bitovski operatori.
+								<li>Organizacija izvornog koda.
+								<li>Organizacija memorije.
+								<li><a href="2017/predavanja/01.pdf">Slajdovi (za tokove
+								101 i 104).</a>
+							</ul>
+
+						 <h4 class='naslov'> ČAS 2</h4>
+							<ul>
+								<li>Rekurzija.
+								<li>Animacija hanojskih kula <a href="2016/predavanja/Tower_of_Hanoi.gif">1</a>,
+														<a href="2016/predavanja/Tower_of_Hanoi4.gif">2</a> i
+														<a href="2016/predavanja/JS_Hanoi.zip">3</a>.
+								<li> <a href="2017/predavanja/02.pdf">Slajdovi (za tokove
+														101 i 104).</a>
+							</ul>
+                         <h4 class='naslov'> ČAS 3, ČAS 4</h4>
+							<ul>
+								<li>Složenost algoritama.
+								<li><a href="2017/predavanja/03_04.pdf">Slajdovi (za tokove
+								101 i 104).</a>
+							</ul>
+
+                        <h4 class='naslov'> ČAS 5, ČAS 6</h4>
+							<ul>
+								<li>Pretraživanje.
+								<li>Animacija: <a href="2016/predavanja/BinarySearchAnimation.gif">binarna pretraga</a>.
+								<li>Sortiranje.
+								<li>Animacije: <a href="2016/predavanja/SelectionSortNguyen.gif">selection sort</a>,
+								<a href="2016/predavanja/mergesort-o.gif">merge sort</a>, <a href="2016/predavanja/Sorting_quicksort_anim.gif">quick sort</a>.
+								<li>Interaktivni
+								primeri:
+								<a
+								href="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Sorting%20Algorithms/sorting.html">merge</a>,
+								<a
+								href="http://me.dt.in.th/page/Quicksort/">quick</a>.</li>
+								<li><a href="2017/predavanja/05_06.pdf">Slajdovi (za tokove
+								101 i 104).</a>
+							</ul>
+
+						 <h4 class='naslov'> ČAS 7</h4>
+							<ul>
+								<li>Pokazivači.
+								<li>Bibliotečke funkcije lfind, bsearch i qsort
+								<li><a href="2017/predavanja/07.pdf">Slajdovi (za tokove
+								101 i 104).</a>
+							</ul>
+
+						<h4 class='naslov'> ČAS 8</h4>
+							<ul>
+								<li>Dinamička alokacija memorije.
+								<li>Višedimenzioni nizovi.
+								<li><a href="2017/predavanja/08.pdf">Slajdovi (za tokove
+								101 i 104).</a>
+							</ul>
+
+						 <h4 class='naslov'> ČAS 9, ČAS 10</h4>
+							<ul>
+								<li>Liste.
+								<li>Stek.
+								<li>Red.
+								<li><a href="2017/predavanja/09_10.pdf">Slajdovi (za tokove
+								101 i 104).</a>
+							</ul>
+					        <h4 class='naslov'> ČAS 11</h4>
+							<ul>
+								<li>Stabla.
+								<li>Binarna stabla.
+								<li>Uređena binarna stabla.
+								<li><a href="2017/predavanja/11.pdf">Slajdovi (za tokove
+								101 i 104).</a>
+							</ul>
+						<h4 class='naslov'> ČAS 12</h4>
+							<ul>
+								<li>Formalna definicija algoritma.
+								<li><a href="2017/predavanja/12.pdf">Slajdovi (za tokove
+								101 i 104).</a>
+							</ul>
+
+						<h4 class='naslov'> ČAS 13 - samo za radoznale</h4>
+							<ul>
+								<li>Algoritmi u posebnim oblastima.
+								<li><a href="2017/predavanja/13.pdf">Slajdovi (za tokove
+								101 i 104).</a>
+							</ul>
+-------------------------------------------------------------------------------------------------------------->
+                    <!--                   <ol>
+                        <li>  Uvod: o kursu i obavezama na kursu.
+Organizacija izvornog koda. Bitski operatori. <a href="2016/predavanja/01.pdf">Slajdovi.</a>
+</li>
+                        <li> Organizacija memorije. Rekurzija.  <a href="2016/predavanja/02.pdf">Slajdovi</a>
+						(Animacija hanojskih kula <a href="2016/predavanja/Tower_of_Hanoi.gif">1</a>,
+						<a href="2016/predavanja/Tower_of_Hanoi4.gif">2</a> i
+						<a href="2016/predavanja/JS_Hanoi.zip">3</a>).
+                        <li> Složenost algoritama. <a href="2016/predavanja/03.pdf"></a> </li>
+                        <li> <a href="2016/predavanja/04.pdf"></a> </li>
+                        <li> <a href="2016/predavanja/05.pdf"></a> </li>
+                        <li> <a href="2016/predavanja/06.pdf"></a> </li>
+                        <li> <a href="2016/predavanja/07.pdf"></a> </li>
+                        <li> <a href="2016/predavanja/08.pdf"></a> </li>
+                        <li> <a href="2016/predavanja/09.pdf"></a> </li>
+                        <li> <a href="2016/predavanja/10.pdf"></a> </li>
+                        <li> <a href="2016/predavanja/11.pdf"></a> </li>
+                        <li> <a href="2016/predavanja/12.pdf"></a> </li>
+                        <li> <a href="2016/predavanja/13.pdf"></a> </li>
+                    </ol>-->
+
+            </div>
+            <!-- ################### PREDAVANJA - KRAJ ##################### -->
+
+
+            <!-- ################# VEZBE - POCETAK ##################### -->
+            <div id='vezbe'>
+
+                <p>
+                    Mole se svi studenti da sve uočene greške i/ili propuste iz <a href="zbirka/p2_zbirka.pdf"
+                        target="_blank">zbirke</a>
+                    prijave preko ove <a href="http://goo.gl/forms/QwTZLJmrae" target="_blank">forme</a> kako bi naredno
+                    izdanje bilo još bolje. Hvala!
+                </p>
+
+		<div class='cas'>
+                <b><u>Linkovi ka snimcima vežbi i praktikuma:</u></b>
+
+                <a href="https://docs.google.com/spreadsheets/d/1PR5rrCg914vesfjzmAP8itAfDyvMOud2fuZKp5fRawM/edit#gid=0">Tok 1o1</a>,
+                <a href="https://docs.google.com/spreadsheets/d/1xVV3MMLR8BOeu9L7QF6-mCeir16TdERpDsY9jxwMoCE/edit#gid=0">Tok 1o2</a>,
+<a href="https://docs.google.com/spreadsheets/d/1PoBlgOAZWpK46YFi27rfQyES4CwihWK-NSmiOe2qtQc/edit?usp=sharing">Tok 1o3</a>,
+                <a href="https://docs.google.com/spreadsheets/d/1AE1BRO9SlWU4O3w6X8cJST0o4rzOmOyaNjXzjWn0RKc/edit?usp=sharing">Tok 1o4</a>
+                </div>
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 1: Kompilacija iz više izvornih datoteka </h4>
+
+                    <ul>
+                        <li> <a href='2015/vezbe/01/test_complex.c' target="_blank"> Program koji radi sa kompleksnim
+                                brojevima pisan u jednoj izvornoj datoteci </a> </li>
+                        <li> <a href='2015/vezbe/01/razlozen_1.zip'> Isti program izdeljen u 2 izvorne datoteke </a>
+                        </li>
+                        <li> <a href='2015/vezbe/01/razlozen_2.zip'> Ispravno napisana biblioteka za rad sa kompleksnim
+                                brojevima </a> </li>
+                        <li> <a href='2015/vezbe/01/razlozen_3.zip'> Ilustracija zaključavanja zaglavlja i kompilacije
+                                korišćenjem alata make </a> </li>
+                        <li> <a href='2015/vezbe/01/p2_01.pdf' target="_blank"> Prateće objašnjenje</a> </li>
+                        <li> <a href='2015/vezbe/01/01.zip'> Svi materijali sa časa </a> </li>
+                    </ul>
+                </div>
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 2: Algoritmi za rad sa bitovima </h4>
+
+                    <ul>
+                        <li> Biblioteka za štampanje bitova:
+                            <a href='zbirka/resenja/biblioteke/stampanje_bitova/stampanje_bitova.h'
+                                target="_blank">stampanje_bitova.h</a> i
+                            <a href='zbirka/resenja/biblioteke/stampanje_bitova/stampanje_bitova.c'
+                                target="_blank">stampanje_bitova.c</a>
+                        </li>
+                        <li> Zadaci iz <a href="zbirka/p2_zbirka.pdf#page=14" target="_blank">zbirke</a>: <a
+                                href='zbirka/resenja/1_UvodniZadaci/1_05.c' target="_blank">1.5</a>,
+                            <a href='zbirka/resenja/1_UvodniZadaci/1_06.c' target="_blank">1.6</a>,
+                            <a href='zbirka/resenja/1_UvodniZadaci/1_07.c' target="_blank">1.7</a>,
+                            <a href='zbirka/resenja/1_UvodniZadaci/1_08.c' target="_blank">1.8</a>,
+                            <a href='zbirka/resenja/1_UvodniZadaci/1_09.c' target="_blank">1.9</a>,
+                            <a href='zbirka/resenja/1_UvodniZadaci/1_10.c' target="_blank">1.10</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 3: Rekurzija </h4>
+
+                    <ul>
+                        <li> Zadaci iz <a href="zbirka/p2_zbirka.pdf#page=20" target="_blank">zbirke</a>: <a
+                                href='zbirka/resenja/1_UvodniZadaci/1_17.c' target="_blank">1.17</a>,
+                            <a href='zbirka/resenja/1_UvodniZadaci/1_18.c' target="_blank">1.18</a>,
+                            <a href='zbirka/resenja/1_UvodniZadaci/1_19.c' target="_blank">1.19</a>,
+                            <a href='zbirka/resenja/1_UvodniZadaci/1_21.c' target="_blank">1.21</a>,
+                            <a href='zbirka/resenja/1_UvodniZadaci/1_23.c' target="_blank">1.23</a>,
+                            <a href='zbirka/resenja/1_UvodniZadaci/1_28.c' target="_blank">1.28</a>,
+                            <a href='zbirka/resenja/1_UvodniZadaci/1_34.c' target="_blank">1.34</a>
+                        <!--<a href='zbirka/resenja/1_UvodniZadaci/1_33.c' target="_blank">1.33</a>-->
+                        </li>
+                    </ul>
+                </div>
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 4: Algoritmi pretrage </h4>
+                    <ul>
+                        <li> Zadaci iz <a href="zbirka/p2_zbirka.pdf#page=136" target="_blank">zbirke</a>: <a
+                                href='zbirka/resenja/3_AlgoritmiPretrageISortiranja/3_01.c' target="_blank">3.1</a>,
+                            <a href='zbirka/resenja/3_AlgoritmiPretrageISortiranja/3_03.c' target="_blank">3.3</a>,
+                            <a href='zbirka/resenja/3_AlgoritmiPretrageISortiranja/3_04.c' target="_blank">3.4</a>
+                            i prateća <a href='2015/vezbe/04/studenti.txt' target="_blank">datoteka</a> sa podacima o
+                            studentima</li>
+                    </ul>
+                </div>
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 5: Algoritmi sortiranja </h4>
+
+                    <ul>
+                        <li> Zadaci iz <a href="zbirka/p2_zbirka.pdf#page=141" target="_blank">zbirke</a></li>
+                        <li> Biblioteka funkcija sortiranja niza celih brojeva: <a
+                                href='zbirka/resenja/biblioteke/sortiranje/sort.c' target="_blank">sort.c</a>,
+                            <a href='zbirka/resenja/biblioteke/sortiranje/sort.h' target="_blank">sort.h</a>,
+                            <a href='2015/vezbe/05/sort/test_01.c' target="_blank">test funkcija</a>,
+                            <a href='zbirka/resenja/3_AlgoritmiPretrageISortiranja/3_12.c' target="_blank">3.12</a></li>
+                        <li> <a href='zbirka/resenja/3_AlgoritmiPretrageISortiranja/3_18.c' target="_blank">3.18</a> i
+                            prateće datoteke:
+                            <a href='2015/vezbe/05/g1.txt' target="_blank">g1</a> i <a href='2015/vezbe/05/g2.txt'
+                                target="_blank">g2</a> sa podacima o studentima</li>
+                    </ul>
+                </div>
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 6: Primene algoritama sortiranja </h4>
+
+                    <ul>
+                        <li> Zadaci iz <a href="zbirka/p2_zbirka.pdf#page=146" target="_blank">zbirke</a></li>
+                        <li> <a href='zbirka/resenja/3_AlgoritmiPretrageISortiranja/3_20.c' target="_blank">3.20</a> i
+                            <a href='2015/vezbe/06/biracki_spisak.txt' target="_blank">prateća datoteka</a> </li>
+                        <li> <a href='zbirka/resenja/3_AlgoritmiPretrageISortiranja/3_23.c' target="_blank">3.23</a> i
+                            <a href='2015/vezbe/06/artikli.txt' target="_blank">prateća datoteka</a></li>
+                        <li> <a href='zbirka/resenja/3_AlgoritmiPretrageISortiranja/3_24.c' target="_blank">3.24</a> i
+                            <a href='2015/vezbe/06/aktivnost.txt' target="_blank">prateća datoteka</a></li>
+                    </ul>
+                </div>
+
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 7: Pokazivači i aritmetika sa pokazivačima </h4>
+
+                    <ul>
+                        <li>Osnovne operacije sa pokazivačima i pokazivačka aritmetika: <a
+                                href='2015/vezbe/07/primer1.c' target="_blank">1</a>,
+                            <a href='2015/vezbe/07/primer2.c' target="_blank">2</a>,
+                            <a href='2015/vezbe/07/primer3.c' target="_blank">3</a>
+                        </li>
+                        <li> Zadaci iz <a href="zbirka/p2_zbirka.pdf#page=78" target="_blank">zbirke</a></li>
+                        <li> Veza pokazivača i nizova: <a href='2015/vezbe/07/primer4.c' target="_blank">uvodni
+                                primer</a>, <a href='zbirka/resenja/2_Pokazivaci/2_01.c' target="_blank">2.1</a>,
+                            <a href='zbirka/resenja/2_Pokazivaci/2_02.c' target="_blank">2.2</a>, <a
+                                href='zbirka/resenja/2_Pokazivaci/2_03.c' target="_blank">2.3</a>,
+                            <a href='zbirka/resenja/2_Pokazivaci/2_04.c' target="_blank">2.4</a></li>
+                    </ul>
+                </div>
+
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 8: Višedimenzioni nizovi </h4>
+
+                    <ul>
+                        <li> Zadaci iz <a href="zbirka/p2_zbirka.pdf#page=82" target="_blank">zbirke</a>:
+                            <a href='zbirka/resenja/2_Pokazivaci/2_08.c' target="_blank">2.8</a>,
+                            <a href='zbirka/resenja/2_Pokazivaci/2_09.c' target="_blank">2.9</a>,
+                            <a href='zbirka/resenja/2_Pokazivaci/2_13.c' target="_blank">2.13</a></li>
+                        <li><a href='2015/vezbe/08/05_niske.c' target="_blank">Sortiranje niza niski</a> i <a
+                                href='2015/vezbe/08/niske.txt' target="_blank">prateća datoteka</a></li>
+                    </ul>
+                </div>
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 9: Dinamička alokacija </h4>
+
+                    <ul>
+                        <li> Zadaci iz <a href="zbirka/p2_zbirka.pdf#page=87" target="_blank">zbirke</a>:
+                            <a href='zbirka/resenja/2_Pokazivaci/2_15.c' target="_blank">2.15</a>,
+                            <a href='zbirka/resenja/2_Pokazivaci/2_16.c' target="_blank">2.16</a>,
+                            <a href='zbirka/resenja/2_Pokazivaci/2_17.c' target="_blank">2.17</a>,
+                            <a href='zbirka/resenja/2_Pokazivaci/2_18.c' target="_blank">2.18</a>,
+                            <a href='zbirka/resenja/2_Pokazivaci/2_20.c' target="_blank">2.20</a></li>
+                        <li> Biblioteka funkcija za rad sa matricama celih brojeva:
+                            <a href='zbirka/resenja/biblioteke/matrica/matrica.c' target="_blank">matrica.c</a>,
+                            <a href='zbirka/resenja/biblioteke/matrica/matrica.h' target="_blank">matrica.h</a></li>
+                    </ul>
+                </div>
+
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 10: Pokazivači na funkcije i bibliotečke funkcije pretraživanja i sortiranja
+                    </h4>
+
+                    <ul>
+                        <li>Zadatak iz <a href="zbirka/p2_zbirka.pdf#page=93" target="_blank">zbirke</a>:
+                            <a href='zbirka/resenja/2_Pokazivaci/2_27.c' target="_blank">2.27</a></li>
+                        <li>Sortiranje i pretraživanje nizova. Zadaci iz <a href="zbirka/p2_zbirka.pdf#page=152"
+                                target="_blank">zbirke</a>:
+                            <ul>
+                                <li><a href='zbirka/resenja/3_AlgoritmiPretrageISortiranja/3_31.c'
+                                        target="_blank">3.31</a> i <a
+                                        href='zbirka/resenja/3_AlgoritmiPretrageISortiranja/3_32.c'
+                                        target="_blank">3.32</a> </li>
+                                <li><a href='zbirka/resenja/3_AlgoritmiPretrageISortiranja/3_33.c'
+                                        target="_blank">3.33</a>,
+                                    <a href='zbirka/resenja/3_AlgoritmiPretrageISortiranja/3_34.c'
+                                        target="_blank">3.34</a> i prateća <a href='2015/vezbe/10/niske.txt'
+                                        target="_blank">datoteka</a></li>
+                                <li><a href='zbirka/resenja/3_AlgoritmiPretrageISortiranja/3_35.c'
+                                        target="_blank">3.35</a> i prateća <a href='2015/vezbe/10/rezultati.txt'
+                                        target="_blank">datoteka</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 11: Liste </h4>
+
+                    <ul>
+                        <li>Zadaci iz <a href="zbirka/p2_zbirka.pdf#page=230" target="_blank">zbirke</a>:
+                            <ul>
+                                <li>biblioteka za 4.1 : <a href='zbirka/resenja/biblioteke/lista_iterativna/lista.h'
+                                        target="_blank">lista.h</a> i <a
+                                        href='zbirka/resenja/biblioteke/lista_iterativna/lista.c'
+                                        target="_blank">lista.c</a></li>
+                                <li>biblioteka za 4.2 : <a href='zbirka/resenja/biblioteke/lista_rekurzivna/lista.h'
+                                        target="_blank">lista.h</a> i <a
+                                        href='zbirka/resenja/biblioteke/lista_rekurzivna/lista.c'
+                                        target="_blank">lista.c</a></li>
+                                <li>main funkcija za deo: <a
+                                        href='zbirka/resenja/4_DinamickeStrukture/401_i_402/main_a.c'
+                                        target="_blank">pod a</a>,
+                                    <a href='zbirka/resenja/4_DinamickeStrukture/401_i_402/main_b.c' target="_blank">pod
+                                        b</a>,
+                                    <a href='zbirka/resenja/4_DinamickeStrukture/401_i_402/main_c.c' target="_blank">pod
+                                        c</a></li>
+                            </ul>
+
+<!--
+                        <li>
+                            <ul>
+                                <li>biblioteka za 4.11 : <a
+                                        href='zbirka/resenja/biblioteke/dvostruko_povezana_lista/dvostruko_povezana_lista.h'
+                                        target="_blank">dvostruko_povezana_lista.h</a> i <a
+                                        href='zbirka/resenja/biblioteke/dvostruko_povezana_lista/dvostruko_povezana_lista.c'
+                                        target="_blank">dvostruko_povezana_lista.c</a></li>
+                                <li>main funkcija za deo: <a href='zbirka/resenja/4_DinamickeStrukture/4_11_a.c'
+                                        target="_blank">pod a</a>,
+                                    <a href='zbirka/resenja/4_DinamickeStrukture/4_11_b.c' target="_blank">pod b</a>,
+                                    <a href='zbirka/resenja/4_DinamickeStrukture/4_11_c.c' target="_blank">pod c</a>
+                                </li>
+                            </ul>
+                        </li>
+-->
+                    </ul>
+                </div>
+
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 12: Liste i binarno pretraživačko stablo</h4>
+
+                    <ul>
+                        <li>Zadaci iz <a href="zbirka/p2_zbirka.pdf#page=241" target="_blank">zbirke</a>: <a
+                                href='zbirka/resenja/4_DinamickeStrukture/4_14.c' target="_blank">4.14</a></li>
+                        <li> Biblioteka funkcija za rad sa binarnim pretraživačim stablom celih brojeva: <a
+                                href='zbirka/resenja/biblioteke/stabla/stabla.c' target="_blank">stabla.c</a>,
+                            <a href='zbirka/resenja/biblioteke/stabla/stabla.h' target="_blank">stabla.h</a></li>
+                    </ul>
+                </div>
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 13: Binarno pretraživačko stablo - nastavak</h4>
+
+                    <ul>
+                        <li>Zadaci iz <a href="zbirka/p2_zbirka.pdf#page=241" target="_blank">zbirke</a>:
+                            <a href='zbirka/resenja/4_DinamickeStrukture/4_21.c' target="_blank">4.21</a>,
+                            <a href='zbirka/resenja/4_DinamickeStrukture/4_15.c' target="_blank">4.15</a>,
+                            <a href='zbirka/resenja/4_DinamickeStrukture/4_20.c' target="_blank">4.20</a>,
+                            <a href='zbirka/resenja/4_DinamickeStrukture/4_16.c' target="_blank">4.16</a> i prateća<a
+                                href='2015/vezbe/12/imenik.txt' target="_blank"> datoteka</a></li>
+                    </ul>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------->
+
+
+
+                <!-------------------------------------------------------------------------------------------------------------
+DODATNO
+12. CAS
+
+
+                            NIJE radjeno 2016, ni 2017, ni 2018 <li><a href='2015/vezbe/11/04_stek.c' target ="_blank">Stek implementiran pomoću liste</a> i prateća<a href='2015/vezbe/11/primer.html' target ="_blank"> datoteka</a></li>
+                            <li><a href='2015/vezbe/11/05_red.c' target ="_blank">Red implementiran pomoću liste</a></li>
+                            <li> <a href='2015/vezbe/11/11.zip'> Svi materijali u vezi listi</a> </li>
+                            <br/>
+
+-------------------------------------------------------------------------------------------------------------->
+
+
+            </div>
+
+            <!-- ################# VEZBE - KRAJ ##################### -->
+
+
+
+            <!-- ################# PRAKTIKUMI - POCETAK ##################### -->
+            <div id='praktikumi'>
+
+                <div>
+                    <h4 class='mali_naslov_sekcije'> Slackware virtuelna mašina </h4>
+                    <ul>
+                        <li> <a href='https://onedrive.live.com/?authkey=%21ADXtuLe2irxxUyM&cid=5E4265D4181A7C2E&id=5E4265D4181A7C2E%211278&parId=5E4265D4181A7C2E%211277&action=locate'
+                                target='_blank'> Preuzimanje virtuelne mašine (sa uputstvom) </a></li>
+                    </ul>
+                </div>
+
+		<div class='cas'>
+                <b><u>Linkovi ka snimcima vežbi i praktikuma:</u></b>
+
+                <a href="https://docs.google.com/spreadsheets/d/1PR5rrCg914vesfjzmAP8itAfDyvMOud2fuZKp5fRawM/edit#gid=0">Tok 1o1</a>,
+                <a href="https://docs.google.com/spreadsheets/d/1xVV3MMLR8BOeu9L7QF6-mCeir16TdERpDsY9jxwMoCE/edit#gid=0">Tok 1o2</a>,
+<a href="https://docs.google.com/spreadsheets/d/1PoBlgOAZWpK46YFi27rfQyES4CwihWK-NSmiOe2qtQc/edit?usp=sharing">Tok 1o3</a>,
+                <a href="https://docs.google.com/spreadsheets/d/1AE1BRO9SlWU4O3w6X8cJST0o4rzOmOyaNjXzjWn0RKc/edit?usp=sharing">Tok 1o4</a>
+
+
+
+                </div><br/>
+
+
+                <div class='cas'>
+                <b><u>Aktivnost studenata na praktikumu:</u></b>
+
+                <a href="https://docs.google.com/spreadsheets/d/1Vcsq_wgia3V6G9V47jpzxZNfrX-H756XAC-a2aI4G8I/edit#gid=1700745524">Tok 1o1</a>,
+                <a href="https://docs.google.com/spreadsheets/d/12CDJzspZihrzROUhnhSGsQYGV5CU48FyoFXGiqdVCbI/edit#gid=446163270">Tok 1o2</a>,
+                <a href="https://docs.google.com/spreadsheets/d/1LufbtO5lgf1hRN7H0gzOlu6XkwP4Ewdzk1HSS7t75eM/edit#gid=720834307">Tok 1o3</a>,
+                <a href="https://docs.google.com/spreadsheets/d/13MX5uhdhpWpty-_MJ8pxPURTAP15nyhU-plFn4Mp9No/edit#gid=795049969">Tok 1o4</a>
+
+                </div>
+
+                <div class='cas'>
+
+                    <h4 class='naslov'> ČAS 1: Obnavljanje gradiva Programiranja 1 </h4>
+
+                    <ul>
+                        <li> <a href='2017/praktikumi/p2_praktikum.pdf#page=3'> Zadaci za pripremu </a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 2: Kompilacija iz više izvornih datoteka </h4>
+                    <ul>
+                        <li> <a href='2017/praktikumi/p2_praktikum.pdf#page=5'> Zadaci za pripremu </a></li>
+                    </ul>
+                </div>
+
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 3: Bitovski operatori </h4>
+                    <ul>
+                        <li> <a href='2017/praktikumi/p2_praktikum.pdf#page=7'> Zadaci za pripremu </a></li>
+                    </ul>
+                </div>
+
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 4: Rekurzija </h4>
+                    <ul>
+                        <li> <a href='2017/praktikumi/p2_praktikum.pdf#page=9'> Zadaci za pripremu </a></li>
+                    </ul>
+                </div>
+
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 5: Algoritmi pretrage </h4>
+                    <ul>
+                        <li> <a href='2017/praktikumi/p2_praktikum.pdf#page=11'> Zadaci za pripremu </a></li>
+                    </ul>
+                </div>
+
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 6: Sortiranje </h4>
+                    <ul>
+                        <li> <a href='2017/praktikumi/p2_praktikum.pdf#page=13'> Zadaci za pripremu </a></li>
+                    </ul>
+                </div>
+
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 7: Sortiranje </h4>
+                    <ul>
+                        <li> <a href='2017/praktikumi/p2_praktikum.pdf#page=15'> Zadaci za pripremu </a></li>
+                    </ul>
+                </div>
+
+
+<!--
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 8: Zadaci sa kolokvijuma, školska 2015/16. godina </h4>
+                    <ul>
+                        <li> <a href='2017/praktikumi/p2_praktikum.pdf#page=17'> Prva grupa </a></li>
+                        <li> <a href='2017/praktikumi/p2_praktikum.pdf#page=18'> Druga grupa </a></li>
+                    </ul>
+                </div>
+-->
+
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 8: Pokazivači i pokazivačka aritmetika </h4>
+                    <ul>
+                        <li> <a href='2017/praktikumi/p2_praktikum.pdf#page=19'> Zadaci za pripremu </a></li>
+                    </ul>
+                </div>
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 9: Matrice </h4>
+                    <ul>
+                        <li> <a href='2017/praktikumi/p2_praktikum.pdf#page=21'> Zadaci za pripremu </a></li>
+                    </ul>
+                </div>
+
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 10: Dinamička alokacija memorije </h4>
+                    <ul>
+                        <li> <a href='2017/praktikumi/p2_praktikum.pdf#page=23'> Zadaci za pripremu </a></li>
+                    </ul>
+                </div>
+
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 11: Pokazivači na funkcije i bibliotečke funkcije pretrage i sortiranja
+                    </h4>
+                    <ul>
+                        <li> <a href='2017/praktikumi/p2_praktikum.pdf#page=26'> Zadaci za pripremu </a></li>
+                    </ul>
+                </div>
+
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 12: Liste </h4>
+                    <ul>
+                        <li> <a href='2017/praktikumi/p2_praktikum.pdf#page=28'> Zadaci za pripremu </a></li>
+                    </ul>
+                </div>
+
+                <div class='cas'>
+                    <h4 class='naslov'> ČAS 13: Stabla </h4>
+                    <ul>
+                        <li> <a href='2017/praktikumi/p2_praktikum.pdf#page=31'> Zadaci za pripremu </a></li>
+                        <li> Pomoćne datoteke: <a href='2017/praktikumi/biblioteke/stabla/stabla.c'> stabla.c </a>, <a
+                                href='2017/praktikumi/biblioteke/stabla/stabla.h'> stabla.h </a></li>
+                    </ul>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------->
+
+
+
+                <!-------------------------------------------------------------------------------------------------------------
+					<div class='cas'>
+                        <h4 class='naslov'> Rešenja zadataka sa praktikuma </h4>
+                        <ul>
+                            <li> <a href="http://poincare.matf.bg.ac.rs/~jgraovac/courses/p2/02_kompilacija_iz_vise_izvornih_datoteka.zip"> 02_kompilacija_iz_vise_izvornih_datoteka.zip </a></li>
+                            <li> <a href="http://poincare.matf.bg.ac.rs/~jgraovac/courses/p2/03_bitski_operatori.zip"> 03_bitski_operatori.zip </a></li>
+                            <li> <a href="http://poincare.matf.bg.ac.rs/~jgraovac/courses/p2/04_rekurzija.zip"> 04_rekurzija.zip </a></li>
+                            <li> <a href="http://poincare.matf.bg.ac.rs/~jgraovac/courses/p2/05_pretrage.zip"> 05_pretrage.zip </a></li>
+                            <li> <a href="http://poincare.matf.bg.ac.rs/~jgraovac/courses/p2/06_sortiranje.zip"> 06_sortiranje.zip</a></li>
+                            <li> <a href="2016/praktikumi/resenja/07_sortiranje.zip"> 07_sortiranje.zip </a> </li>
+                            <li> <a href="http://poincare.matf.bg.ac.rs/~jgraovac/courses/p2/08_pokazivaci.zip"> 08_pokazivaci.zip</a></li>
+                            <li> <a href="2016/praktikumi/resenja/09_matrice.zip"> 09_matrice.zip </a> </li>
+                            <li> <a href="2016/praktikumi/resenja/10_dinamicka_alokacija.zip"> 10_dinamicka_alokacija.zip </a> </li>
+                            <li> <a href="http://poincare.matf.bg.ac.rs/~jgraovac/courses/p2/11_pokazivaci_na_funkcije.zip"> 11_pokazivaci_na_funkcije.zip</a></li>
+                            <li> <a href="http://poincare.matf.bg.ac.rs/~jgraovac/courses/p2/12_liste.zip"> 12_liste.zip</a></li>
+                            <li> <a href="http://poincare.matf.bg.ac.rs/~jgraovac/courses/p2/13_stabla.zip"> 13_stabla.zip</a></li>
+                        </ul>
+                    </div>
+-------------------------------------------------------------------------------------------------------------->
+
+            </div>
+            <!-- ################# PRAKTIKUMI - KRAJ ##################### -->
+
+            <!-- ##################### OBAVESTENJA - POCETAK ##################### -->
+            <!-- OBAVESTENJA SLAGATI HRONOLOSKI - OD NOVIH KA STARIM OBAVESTENJAMA -->
+
+	<div id='obavestenja'>
+	
+	<div class="obavestenje">
+        <h4> Upis ocena u Hipatiju za tokove 1o1 i 1o4 </h4>
+        <p> Mole se studenti tokova 1o1 i 1o4 da provere unete poene na Hipatiji i u slučaju greške jave profesoru Ivanu Čukiću.
+        </p>
+        <p class='datum_objavljivanja'> 01.02.2021. </p>
+        </div>
+	
+	<div class="obavestenje">
+            	<h4> Rezultati praktičnog dela ispita - Januar 1 </h4>
+                    <ul>   
+              	       <li> 1 tok - Ukupne rezultate ispita možete videti 
+			     <a href="/2020/ispiti/rezultati/101_ukupno_jan1.pdf">ovde</a> 
+			</li>
+			<li> 2. tok - Ukupne rezultate ispita možete videti  
+			     <a href="/2020/ispiti/rezultati/102_ukupno_jan1.pdf">ovde</a> 
+			</li>
+			<li> 3. tok - Ukupne rezultate ispita možete videti  
+			     <a href="/2020/ispiti/rezultati/103_ukupno_jan1.pdf">ovde</a> 
+			</li>
+			<li> 4. tok - Rezultate praktičnog dela ispita možete videti 
+			     <a href="https://docs.google.com/spreadsheets/d/1h6cx0LvFeABnxD8NvjGK1-CWWYmFdW1Acll8W3oZiD0/edit?usp=sharing">ovde</a> 
+			</li>
+
+                    </ul>
+
+                    <ul>
+				<li> Uvid u radove sa praktičnog dela ispita za 1. 2. i 3. tok kod Nevene Ćirić će biti održan 30.01. u 17:30 u kancelariji 716. </li>
+<li> Uvid u radove sa praktičnog dela ispita za 4. tok kod Jelene Marković je putem mejla, po potrebi može dogovor za uživo. </li>
+                   </ul>
+		<p class='datum_objavljivanja'>27.01.2021.</p>
+                </div>
+	
+        <div class="obavestenje">
+        <h4> Raspored sedenja za praktični deo ispita u roku januar 1 </h4>
+        <p>Svi studenti treba da dođu u 718. Doći 10 minuta pre početka ispita. Sa sobom poneti indeks.
+        </p>
+        <p class='datum_objavljivanja'> 25.01.2021. </p>
+        </div>
+
+
+        <div class="obavestenje">
+        <h4> Prijava za praktični deo ispita u ispitnom roku JAN1 </h4>
+        <p>Ako planirate da izađete na ispit, molim Vas popunite anketu koja se nalazi <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHQqrDxIGBcDZ9IpmZLS4J3FhtlPuymbUi4IgKE8N6KCRXwQ/viewform?usp=sf_link">ovde</a>. Anketa će biti aktivna do 25.01.2021. do 17h. Raspored
+           sedenja će biti okačen sat vremena nakon kraja prijave.
+        </p>
+        <p class='datum_objavljivanja'> 22.01.2021. </p>
+        </div>
+
+
+		<div class="obavestenje">
+            	<h4> Rezultati teorijskog dela ispita - Januar 1 </h4>
+                    <ul>  
+                     
+              	        <li> 1. tok - <a href="/2020/ispiti/P2-Tok1-Jan1.xlsx">ovde</a>
+			</li>
+
+
+			<li> 2. tok - <a href="/2020/ispiti/102_teorija_jan1.pdf">ovde</a> </li>
+
+
+                    	<li> 3. tok - <a href="/2020/ispiti/P2-Tok3-Jan1.xlsx">ovde</a>
+           		<br>
+			Uvid u teorijske radove za tok 3 će biti održan u sredu, 30.09. u 9h na Studentskom Trgu. 
+            		</li>
+
+			<li> 4. tok - <a href="/2020/ispiti/104_teorija_jan1.pdf">ovde</a>
+			</li>
+              </ul>
+Ukoliko imate neko pitanje u vezi sa rezultatima na 1. toku ili na 3. toku, javite se prof. Jeleni Graovac imejlom (jgraovac at matf.bg.ac.rs).
+
+		<p class='datum_objavljivanja'>20.01.2021.</p>
+                </div> 
+
+		<div class="obavestenje">
+	    	<h4> Rezultati kvalifikacionog dela ispita za rok JAN1</h4>
+<ul>
+		<li> 1. tok - Rezultate kvalifikacionog dela ispita možete videti <a href="/2020/ispiti/101_kvalifikacioni_jan1.pdf">ovde</a> </li>
+		
+		<li> 2. tok - Rezultate kvalifikacionog dela ispita možete videti <a href="/2020/ispiti/102_kvalifikacioni_jan1_2021.pdf">ovde</a> </li>	
+
+		<li> 3. tok - Rezultate kvalifikacionog dela ispita možete videti <a href="/2020/ispiti/103_kvalifikacioni_jan1.pdf">ovde</a> </li>
+
+		<li> 4. tok - Rezultate kvalifikacionog dela ispita možete videti <a href="https://docs.google.com/spreadsheets/d/1YSapGhLJd8-LXs2tVEaCHWl2DY_DD4fa_arQjhyPs2A/edit?usp=sharing">ovde</a> </li>
+
+</ul>
+		Radove za 1. i 3. tok pregledala je Nevena Ćirić. Uvid u radove je u četvrtak, 21.01.2020. u 11h u kancelariji 716.<br>
+Radove za 2. i 4. tok pregledala je Jelena Marković. Uvid u radove je mejlom. Po potrebi može dogovor za uživo.
+	    	<p class='datum_objavljivanja'>19.01.2021.</p>
+            	</div>
+
+		<div class="obavestenje">
+	    	<h4>Raspored sedenja za pismeni deo ispita u roku Septembar 3</h4>
+	    	<p> Studenti koji polažu teorijski i kvalifikacioni ili samo teorijski deo ispita biće u učionici 706, dok će
+		    studenti koji polažu samo kvalifikacioni deo ispita biti u učionici 821.
+	    	</p>
+	    	<p class='datum_objavljivanja'>23.09.2020.</p>
+            	</div>
+
+		<div class="obavestenje">
+	    	<h4>Raspored sedenja za pismeni deo ispita u roku Januar 1</h4>
+	    	<p> Studenti koji polažu pismeni deo ispita biće u učionici 706.
+	    	</p>
+	    	<p class='datum_objavljivanja'>18.01.2021.</p>
+        </div>
+
+
+		<div class="obavestenje">
+		<h4> Prijava za pismeni deo ispita u ispitnom roku JAN1 </h4>
+		<p>Ako planirate da izađete na ispit, molim Vas popunite anketu koja se nalazi <a href="https://docs.google.com/forms/d/e/1FAIpQLScOU4tzsluXt_qAjwcow-x6W4HqhlFSg3szFk5Ckgvt4xlw-A/viewform?usp=sf_link">ovde</a>. Anketa će biti aktivna do 18.01.2021. do 10h. Raspored
+		   sedenja će biti okačen sat vremena nakon kraja prijave.
+		</p>
+		<p class='datum_objavljivanja'> 12.01.2021. </p>
+		</div>
+
+		<div class="obavestenje">
+		<h4> Dodatni termin za upis ocena - tok 1o1 </h4>
+		<p> Upis ocena je u utorak, 13. oktobra od 10h u 710/IV na Studentskom Trgu. </p>
+		<p class='datum_objavljivanja'>10.10.2020.</p>
+                </div>
+
+		<div class="obavestenje">
+            	<h4> Rezultati praktičnog dela ispita - Septembar 3 </h4>
+                    <ul>   
+              	        
+			
+			<li> 1. tok - Ukupne rezultate ispita možete videti <a href="/2020/ispiti/rezultati/101_ukupno_sept3.pdf">ovde</a> <br/>
+			     Upis ocena je u četvrtak u 13h na Studentskom Trgu.
+			</li>
+			<li> 2. tok - Ukupne rezultate ispita možete videti <a href="/2020/ispiti/rezultati/102_ukupno_sept3.pdf">ovde</a> </li>
+			<li> 3. tok - Rezultate praktičnog dela ispita možete videti <a href="/2020/ispiti/103_prakticni_sept3.pdf">ovde</a> </li>
+			<li> 4. tok - Rezultate praktičnog dela ispita možete videti <a href="https://docs.google.com/spreadsheets/d/1ZXspzRJdzTLT4EJuT_TOqwh_AUFb55BX9yd9RN79GSY/edit?usp=sharing">ovde</a> </li>
+
+
+
+			<li> 4. tok - Rezultate teorijskog dela ispita možete videti <a href="http://poincare.matf.bg.ac.rs/~ivan/?content=p2mnvr">ovde</a>.
+			</li>
+
+                    </ul>
+
+                    <ul>
+				<li> Uvid u radove sa praktičnog dela ispita za 1. i 2. tok kod Miodraga Radojevića će biti održan preko mejla zakljucno sa 30.09.2020. </li>
+                    		<li> Uvid u radove za 3. tok kod Božice Kalinić će biti održan 30.09.2020. u 15h u N salama u Svetog Nikole. </li> 
+				<li> Uvid u radove za 4. tok kod Jelene Marković će biti održan 30.09.2020. u 9h u 716 na Trgu. Moguće je obaviti uvid i preko mejla. Obavezna je najava mejlom. </li>
+
+
+                    </ul>
+		<p class='datum_objavljivanja'>29.09.2020.</p>
+                </div>
+
+		<div class="obavestenje">
+                <h4> Raspored sedenja za praktični deo ispita za SEPT3</h4>
+                <p> Raspored sedenja se nalazi <a href="/2020/ispiti/organizacija/p2_raspored_sedenja_sept3.pdf">ovde</a>. 
+                    <br/><br/>
+                    Studenti su u obavezi da na ispit dođu 10 minuta pre početka ispita i da sa sobom ponesu indeks radi identifikacije.
+                <p class='datum_objavljivanja'> 28.09.2020. </p>
+                </div>
+
+		<div class="obavestenje">
+		<h4> Prijava praktičnog dela ispita u Septembru 3</h4>
+		<p> Ako planirate da izađete na praktični deo ispita, molim Vas popunite anketu, koja se nalazi
+	    	<a href = "https://docs.google.com/forms/d/e/1FAIpQLSdl-uHES8Ht0c1-2YHLjKcThfnKNy-1rlTZOLd9Gh_sRFzNcw/viewform?usp=pp_url">ovde</a>.
+	    	Na osnovu te ankete biće formiran raspored sedenja za ispit. Anketa će
+	    	biti aktivna do 28.09.2020. do 22h. Raspored sedenja će biti okačen sat
+	    	vremena nakon završetka prijave. Mole se studenti koji su polagali neki deo pismenog ispita u Septembru 3 da
+		sačekaju celokupne rezultate ispita, i da se prijave tek onda kada saznaju da li su stekli uslov za izlazak na
+	 	praktični.</p>
+		<p class='datum_objavljivanja'> 25.09.2020. </p>
+		</div>
+
+		<div class="obavestenje">
+            	<h4> Rezultati pismenog dela ispita - Septembar 3 </h4>
+                    <ul>   
+              	        <li> 1. tok - Rezultate teorijskog dela ispita možete videti
+			     <a href="/2020/ispiti/rezultati/101_teorija_sept3.pdf">ovde</a>.
+			</li>
+			
+<!--			<li> 1. tok - Rezultate kvalifikacionog dela ispita možete videti <a href="/2020/ispiti/101_kvalifikacioni_sept2.pdf">ovde</a> </li>
+-->
+<!--
+			<li> 2. tok - Rezultate kvalifikacionog dela i teorijskog dela ispita možete videti <a href="/2020/ispiti/102_kvalifikacioni_sept2.pdf">ovde</a> </li>
+-->
+<!--
+			<li> 3. tok - Rezultate kvalifikacionog dela ispita možete videti <a href="/2020/ispiti/103_kvalifikacioni_sept2.pdf">ovde</a> </li>
+
+-->
+                    	<li> 3. tok - Rezultate teorijskog dela ispita možete videti <a href="/2020/ispiti/rezultati/103_teorija_sept3.pdf">ovde</a>.
+           		<br>
+			Uvid u teorijske radove za tok 3 će biti održan u sredu, 30.09. u 9h na Studentskom Trgu. 
+            		</li>
+
+<!--			<li> 4. tok - Rezultate pismenog dela ispita možete videti <a href="https://docs.google.com/spreadsheets/d/1ZXspzRJdzTLT4EJuT_TOqwh_AUFb55BX9yd9RN79GSY/edit?usp=sharing">ovde</a> </li>-->
+
+
+			<li> 4. tok - Rezultate teorijskog dela ispita možete videti <a href="http://poincare.matf.bg.ac.rs/~ivan/?content=p2mnvr">ovde</a>.
+			</li>
+              </ul>
+
+                    <ul>
+                    	<!--	<li> Uvid u radove za 1. tok kod Božice Kalinić će biti održan preko mejla. </li> 
+				<li> Uvid u radove za 4. tok kod Jelene Marković će biti održan 30.09.2020. u 9h u 716 na Trgu. Moguće je obaviti uvid i preko mejla. Obavezna je najava mejlom. </li>
+
+                    </ul>-->
+		<p class='datum_objavljivanja'>24.09.2020.</p>
+                </div> 
+
+		<div class="obavestenje">
+	    	<h4> Rezultati kvalifikacionog dela ispita za rok septembar3</h4>
+<ul>
+	    	<li> <a href = "/2020/ispiti/sept3_delimicni.pdf">ovde</a>. Za uvid se javiti Božici Kalinić na mejl.
+	    	</li>
+		<li> 1. tok - Rezultate kvalifikacionog dela ispita možete videti <a href="/2020/ispiti/101_kvalifikacioni_sept3.pdf">ovde</a> </li>
+		<li> 2. tok - Rezultate kvalifikacionog dela i teorijskog dela ispita možete videti <a href="/2020/ispiti/102_kvalifikacioni_sept3.pdf">ovde</a> </li>	
+		<li> 3. tok - Rezultate kvalifikacionog dela ispita možete videti <a href="/2020/ispiti/103_kvalifikacioni_sept3.pdf">ovde</a> </li>
+		<li> 4. tok - Rezultate kvalifikacionog dela ispita možete videti <a href="/2020/ispiti/104_kvalifikacioni_sept3.pdf">ovde</a> </li>
+</ul>
+		<p>Studenti koji nisu kod Božice na spisku za uvid se mogu javiti Jeleni Marković putem mejla.</p>
+	    	<p class='datum_objavljivanja'>24.09.2020.</p>
+            	</div>
+
+		<div class="obavestenje">
+	    	<h4>Raspored sedenja za pismeni deo ispita u roku Septembar 3</h4>
+	    	<p> Studenti koji polažu teorijski i kvalifikacioni ili samo teorijski deo ispita biće u učionici 706, dok će
+		    studenti koji polažu samo kvalifikacioni deo ispita biti u učionici 821.
+	    	</p>
+	    	<p class='datum_objavljivanja'>23.09.2020.</p>
+            	</div>
+
+		<div class="obavestenje">
+		<h4> Prijava za pismeni deo ispita u ispitnom roku SEPT3 </h4>
+		<p>Ako planirate da izađete na ispit, molim Vas popunite anketu koja se nalazi <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8P11Ob6D5zZEWy6LYyzG-QmPM_NDOFpahLtkSa41uZJHHhw/viewform?usp=pp_url">ovde</a>. Anketa će biti aktivna do 23.09.2020. do 10h. Raspored
+		   sedenja će biti okačen sat vremena nakon kraja prijave.
+		</p>
+		<p class='datum_objavljivanja'> 18.09.2020. </p>
+		</div>
+
+
+		<div class="obavestenje">
+            	<h4> Ukupni rezultati ispita - Septembar 2 </h4>
+                    <ul>
+                 	<li> 1. tok - <a href="/2020/ispiti/rezultati/101_ukupno_sept2.pdf">ovde</a> <br> 
+			     Upis ocena je u ponedeljak, 21. septembra u 18h u Sv. Nikole, sala 225.</li> 
+                  <li> 2. tok - <a href="/2020/ispiti/102_sept2_ukupno.pdf">ovde</a> <br>
+Mole se studenti koji ne žele da im se ocena upiše u hipatiju da se jave profesoru Mladenu.</li>
+                    	<li> 3. tok - <a href="https://docs.google.com/spreadsheets/d/1RTj_-o3BSK9FUsR99YtcozzJwzwMpsFiMNx3YsAQmUc/edit?usp=sharing">ovde</a> </li>
+                  	<li> 4. tok - <a href="/2020/ispiti/104_prakticni_sept2.pdf">ovde</a> </li>
+
+                    </ul>
+		    <ul>
+			<li> Uvid u radove sa praktičnog dela ispita za 1. tok kod Miodraga Radojevića će biti održan preko mejla.
+			</li>
+			<li> Uvid u radove za 2. tok kod Jelene Marković će biti održan preko mejla.
+			</li>
+			<li> Uvid u radove za 3. tok kod Filipa Vidojevića će biti održan putem mejla.
+			</li>
+			<li> Uvid u radove za 4. tok kod Božice Kalinić će biti održan preko mejla. 
+                        </li>
+
+		     </ul>
+		<p class='datum_objavljivanja'>17.09.2020.</p>
+                </div>
+
+		<div class="obavestenje">
+                <h4> Raspored sedenja za praktični deo ispita za SEPT2</h4>
+                <p> Raspored sedenja se nalazi <a href="/2020/ispiti/organizacija/p2_raspored_sedenja_sept2.pdf">ovde</a>. 
+                    <br/><br/>
+                    Studenti su u obavezi da na ispit dođu 10 minuta pre početka ispita i da sa sobom ponesu indeks radi identifikacije.
+                <p class='datum_objavljivanja'> 14.09.2020. </p>
+                </div>
+
+		<div class="obavestenje">
+		<h4> Prijava praktičnog dela ispita u Septembru2</h4>
+		<p> Ako planirate da izađete na praktični deo ispita, molim Vas popunite anketu, koja se nalazi
+	    	<a href = "https://docs.google.com/forms/d/e/1FAIpQLSdl-uHES8Ht0c1-2YHLjKcThfnKNy-1rlTZOLd9Gh_sRFzNcw/viewform?usp=pp_url">ovde</a>.
+	    	Na osnovu te ankete biće formiran raspored sedenja za ispit. Anketa će
+	    	biti aktivna do 14.09.2020. do 22h. Raspored sedenja će biti okačen sat
+	    	vremena nakon završetka prijave. Mole se studenti koji su polagali neki deo pismenog ispita u Septembru 2 da
+		sačekaju celokupne rezultate ispita, i da se prijave tek onda kada saznaju da li su stekli uslov za izlazak na
+	 	praktični.</p>
+		<p class='datum_objavljivanja'> 11.09.2020. </p>
+		</div>
+
+                <div class="obavestenje">
+            	<h4> Rezultati pismenog dela ispita - Sep 2 </h4>
+                    <ul>   
+              	        <li> 1. tok - Rezultate teorijskog dela ispita možete videti
+			     <a href="/2020/ispiti/rezultati/101_teorija_sept2.pdf">ovde</a>.
+                             <br>
+                             Uvid u teorijske radove je putem mejla.
+			</li>
+			<li> 1. tok - Rezultate kvalifikacionog dela ispita možete videti <a href="/2020/ispiti/101_kvalifikacioni_sept2.pdf">ovde</a> </li>
+			<li> 2. tok - Rezultate kvalifikacionog dela i teorijskog dela ispita možete videti <a href="/2020/ispiti/102_kvalifikacioni_sept2.pdf">ovde</a> </li>
+			<li> 3. tok - Rezultate kvalifikacionog dela ispita možete videti <a href="/2020/ispiti/103_kvalifikacioni_sept2.pdf">ovde</a> </li>
+                    	<li> 3. tok - Rezultate teorijskog dela ispita možete videti <a href="2020/predavanja/3_tok/P2Sept2TeorijaRez.txt">ovde</a>.
+           	<br>
+			Uvid u teorijske radove za tok 3 će biti održan u ponedeljak, 14.09.2020. u 9 sati u Jagićevoj. 
+            		</li>
+			<li> 4. tok - Rezultate kvalifikacionog dela ispita možete videti <a href="https://docs.google.com/spreadsheets/d/1j9KwjN1Mg69BcH8OpBJLV402gTmJwyKhhUshnJSB84w/edit?usp=sharing">ovde</a> </li>
+			<li> 4. tok - Rezultate teorijskog dela ispita možete videti <a href="http://poincare.matf.bg.ac.rs/~ivan/?content=p2mnvr">ovde</a>.
+			</li>
+                    </ul>
+                    <ul>
+                    		<li> Uvid u radove za 1. tok kod Božice Kalinić će biti održan preko mejla. </li>
+				<li> Uvid u radove za 2., 3., 4. tok kod Jelene Marković će biti održan 14.09.2020. u 13h u 716 na Trgu. </li>
+                    </ul>
+		<p class='datum_objavljivanja'>10.09.2020.</p>
+                </div>
+		
+		<div class="obavestenje">
+	    	<h4> Raspored sedenja za pismeni deo ispita u roku Septembar 2</h4>
+	    	<p> Studenti koji polažu teorijski i kvalifikacioni ili samo teorijski deo ispita biće u učionici 706, dok će
+		    studenti koji polažu samo kvalifikacioni deo ispita biti u učionici 821.
+	    	</p>
+	    	<p class='datum_objavljivanja'>09.09.2020.</p>
+            	</div>
+
+		<div class="obavestenje">
+		<h4> Prijava za pismeni deo ispita u ispitnom roku SEPT2 </h4>
+		<p>Ako planirate da izađete na ispit, molim Vas popunite anketu koja se nalazi <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8P11Ob6D5zZEWy6LYyzG-QmPM_NDOFpahLtkSa41uZJHHhw/viewform?usp=pp_url">ovde</a>. Anketa će biti aktivna do 09.09.2020. do 10h. Raspored
+		   sedenja će biti okačen sat vremena nakon kraja prijave.
+		</p>
+		<p class='datum_objavljivanja'> 03.09.2020. </p>
+		</div>
+
+		<div class="obavestenje">
+            	<h4> Ukupni rezultati ispita - Sep 1 </h4>
+                    <ul>
+                 	<li> 1. tok - <a href="/2020/ispiti/rezultati/101_ukupno_sept1_novo.pdf">ovde</a> <br> 
+			     Termin za upis ocena će biti naknadno objavljen.</li>
+                        <li> 2. tok - <a href="https://docs.google.com/spreadsheets/d/1sXmYf8uHwQARJbQoqg1b_ag1fhIB_nTtAmm0qCcaFrs/edit?usp=sharing">ovde</a> </li>
+                    	<li> 3. tok - <a href="/2020/ispiti/P2 spisak studenata 2019_2020 - 1o3.pdf">ovde</a> </li>
+                  	<li> 4. tok - <a href="/2020/ispiti/P2 spisak studenata 2019_2020 - 1o4.pdf">ovde</a> </li>
+                    </ul>
+		    <ul>
+			<li> Uvid u radove za 1. tok kod Miodraga Radojevića će biti održan preko mejla.
+			</li>
+			<li> Uvid u radove za 2. tok kod Filipa Vidojevića će biti održan preko mejla.
+			</li>
+			<li> Uvid u radove za 3. tok kod Jelene Marković će biti održan putem mejla.
+			</li>
+			<li> Uvid u radove za 4. tok kod Božice Kalinić će biti održan preko mejla. 
+                        </li>
+		     </ul>
+		<p class='datum_objavljivanja'>03.09.2020.</p>
+                </div>
+
+		<div class="obavestenje">
+                <h4> Raspored sedenja za praktični deo ispita za SEPT1</h4>
+                <p> Raspored sedenja se nalazi <a href="/2020/ispiti/organizacija/p2_raspored_sedenja_sept1.pdf">ovde</a>. Studenti su u obavezi da na ispit dođu 10 minuta pre početka ispita i da sa sobom ponesu indeks radi identifikacije.
+                <p class='datum_objavljivanja'> 31.08.2020. </p>
+                </div>
+
+		<div class="obavestenje">
+		<h4> Prijava praktičnog dela ispita u Septembru1</h4>
+		<p> Ako planirate da izađete na praktični deo ispita, molim Vas popunite anketu, koja se nalazi
+	    	<a href = "https://docs.google.com/forms/d/e/1FAIpQLSdl-uHES8Ht0c1-2YHLjKcThfnKNy-1rlTZOLd9Gh_sRFzNcw/viewform?usp=pp_url">ovde</a>.
+	    	Na osnovu te ankete biće formiran raspored sedenja za ispit. Anketa će
+	    	biti aktivna do 31.08.2020. do 22h. Raspored sedenja će biti okačen sat
+	    	vremena nakon završetka prijave. Mole se studenti koji su polagali neki deo pismenog ispita u Septembru 1 da
+		sačekaju celokupne rezultate ispita, i da se prijave tek onda kada saznaju da li su stekli uslov za izlazak na
+	 	praktični.</p>
+		<p class='datum_objavljivanja'> 27.08.2020. </p>
+		</div>
+
+
+		<div class="obavestenje">
+                    <h4> Rezultati ispita u roku Septembar 1 </h4>
+                    <ul>
+                    	<li> 1. tok <br>
+                            <ul>
+                                <li> Rezultate teorijskog dela ispita možete videti
+				      <a href="/2020/ispiti/rezultati/101_teorija_sept1_novo.pdf">ovde</a>.
+                                     <br>
+                                     Uvid u teorijske radove je putem mejla.
+				</li>
+
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="/2020/ispiti/rezultati/101_kval_sept1.pdf">ovde</a>.
+				</li>
+                            </ul>
+                   	 </li>
+
+                        <li> 2. tok <br>
+                            <ul>
+				<li> Rezultate teorijskog dela ispita možete videti
+				      <a href="/2020/ispiti/rezultati/102_teorija_sept1_novo.pdf">ovde</a>.
+				</li>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti
+				     <a href="https://docs.google.com/spreadsheets/d/1I0YryjE2kTqcr4Ov1i8asV-QpOS9b5Gn6DlTal-tRRg/edit?usp=sharing">ovde</a>.
+ 				</li>
+                            </ul>
+                        </li>
+
+
+                        <li> 3. tok <br>
+                            <ul>
+                              <li> Rezultate teorijskog dela ispita možete videti
+           <a href="2020/predavanja/3_tok/P2Sept1TeorijaRez.txt">ovde</a>.
+           Uvod u teorijske radove za tok 3 će biti održan u ponedeljak, 31.08.2020. u 9 sati u Jagićevoj. 
+            </li>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti
+				     <a href="https://docs.google.com/spreadsheets/d/1drrXdXKGTgcdz0fMbdWXg8gkrsiIR3pNljrAmEC9WHY/edit?usp=sharing">ovde</a>.
+             <br>
+              </li>
+                            </ul>
+                        </li>
+
+
+                   <li> 4. tok <br>
+                            <ul>
+				<li> Rezultate teorijskog dela ispita možete videti
+				      <a href="http://poincare.matf.bg.ac.rs/~ivan/?content=p2mnvr">ovde</a>.
+				</li>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti
+				     <a href="https://docs.google.com/spreadsheets/d/1gtp7494oqTMsv11_0rYVjv_SusdxdoTYtGbPbv6gwag/edit?usp=sharing">ovde</a>.
+				</li>
+                           </ul>
+                        </li>
+
+	            </ul>
+
+                    <ul>
+
+
+			<li>Uvid u radove za 1. tok kod Miodraga Radojevića je 28.08.2020. u 16h na Trgu (kancelarija 716). 				    Potrebno je najaviti dolazak na uvid mejlom. Uvid je takođe moguć putem mejla.
+			</li>
+<li>Uvid u radove za 3. tok i deo 2. toka kod Božice Kalinić biće putem mejla.
+			</li>
+			<li>Uvid u radove za 4. tok i deo 2. toka kod Jelene Marković je 31.08.2020. u 14h na Trgu (kancelarija 716). Potrebno je najaviti dolazak na uvid mejlom. Uvid je takođe moguć putem mejla.
+			</li>
+<!--
+	              <li>Uvid u radove za 2. tok kod Nevene Ćirić je 05.07.2020. u 13h na Trgu (kancelarija 716)</li>
+
+		      <li>Zbog situacije sa virusom, uvid za 3. tok poželjno je obaviti mejlom. Ukoliko neko želi uživo, neka piše mejl, pa ćemo se dogovoriti oko termina. Uvid za 3. tok drži Filip Vidojević.</li>
+
+<li>Zbog situacije sa virusom, uvid za 1. tok poželjno je obaviti mejlom. Ukoliko neko želi uživo, neka piše mejl, pa ćemo se dogovoriti oko termina. Uvid za 1. tok drži Jelena Marković.</li>
+
+
+			<li>Uvid u radove za 4. tok kod Božice Kalinić je 05.07.2020. u 12h na Trgu (kancelarija 716)</li>
+-->
+                    </ul>
+
+                    <p class="datum_objavljivanja"> 27.08.2020. </p>
+                </div>
+
+		<div class="obavestenje">
+	    	<h4> Raspored sedenja za pismeni deo ispita u roku Septembar1</h4>
+	    	<p> Studenti koji polažu teorijski i kvalifikacioni ili samo teorijski deo ispita biće u učionici 706, dok će
+		    studenti koji polažu samo kvalifikacioni deo ispita biti u učionici 821.
+	    	</p>
+	    	<p class='datum_objavljivanja'>26.08.2020.</p>
+            	</div>
+
+		<div class="obavestenje">
+		<h4> Prijava za pismeni deo ispita u ispitnom roku SEPT1 </h4>
+		<p>Ako planirate da izađete na ispit, molim Vas popunite anketu koja se nalazi <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8P11Ob6D5zZEWy6LYyzG-QmPM_NDOFpahLtkSa41uZJHHhw/viewform?usp=pp_url">ovde</a>. Anketa će biti aktivna do 26.08.2020. do 10h. Raspored
+		   sedenja će biti okačen sat vremena nakon kraja prijave.
+		</p>
+		<p class='datum_objavljivanja'> 19.08.2020. </p>
+		</div>
+
+		<div class="obavestenje">
+            	<h4> Ukupni rezultati ispita - Jun 2 </h4>
+                    <ul>
+                 	<li> 1. tok - <a href="/2020/ispiti/rezultati/101_ukupno_jun2.pdf">ovde</a> </li>
+                        <li> 2. tok - <a href="/2020/ispiti/Ukupni_rezultati_jun2_102.pdf">ovde</a> </li>
+                    	<li> 3. tok - <a href="https://docs.google.com/spreadsheets/d/1dC4hI-_bnTKLAPbSQtpMtlBxP90Njj8KEK6eq8X8pZk/edit?usp=sharing">ovde</a> </li>
+                  	<li> 4. tok - <a href="https://docs.google.com/spreadsheets/d/1vkT5dZ0BhL8HXqgvKiKbVQwVkF5U6jT-n880YgE09TE/edit?usp=sharing">zadaci</a> <a href="http://poincare.matf.bg.ac.rs/~ivan/?content=p2mnvr">teorija</a> </li>
+                    </ul>
+		    <ul>
+			<li> Uvid u radove za 1. tok kod Nevene Ćirić je 18.07.2020. u 9h na Trgu (kancelarija 716). 
+			     Moguć je uvid <u>do tad</u> i putem mejla.
+			     Termin za upis ocena će biti okačen naknadno.
+			</li>
+			<li> Uvid u radove za 2. tok kod Božice Kalinić će biti održan preko mejla.
+			</li>
+			<li> Uvid u radove za 3. tok kod Filipa Vidojevića će biti održan putem mejla.
+			</li>
+			<li> Uvid u radove za 4. tok kod Jelene Marković će biti održan preko mejla. 
+                        </li>
+		     </ul>
+		<p class='datum_objavljivanja'>16.07.2020.</p>
+                </div>
+                
+
+		<div class="obavestenje">
+                <h4> Raspored sedenja za praktični deo ispita za JUN2</h4>
+                <p> Raspored sedenja se nalazi <a
+href="https://docs.google.com/spreadsheets/d/1lNpKJ-1FLhtMCO3sqt3Cl733iCc5RN9v4x8WDxvg0u0/edit?usp=sharing">ovde</a>. Ispit počinje u 17 časova. Podsećamo Vas da je za vreme trajanja ispita i kretanja po fakultetu obavezno nošenje maski.</p>
+                <p class='datum_objavljivanja'> 08.07.2020. </p>
+                </div>
+
+
+		<div class="obavestenje">
+		<h4> Održavanje praktičnog dela ispita 08.07.</h4>
+		<p> Prema obaveštenju dekanskog kolegijuma sutrašnji ispiti se odvijaju prema prethodno obajvljenom raspredu.
+                    Shodno tome biće održan i praktični deo ispita iz Programiranja 2. Raspored sedenja biće postavljen 08.07.
+   		    u predvidjeno vreme (~10h).</p>
+		<p class='datum_objavljivanja'> 07.07.2020. </p>
+		</div>
+
+		<div class="obavestenje">
+		<h4> Prijava praktičnog dela ispita u Junu2</h4>
+		<p> Ako planirate da izađete na praktični deo ispita, molim Vas popunite anketu, koja se nalazi
+	    	<a href = "https://docs.google.com/forms/d/e/1FAIpQLSdO0hIp5fGGbhYYnj55aqt6T93YhI4-HH-xfYmTE227IdX14w/viewform?usp=sf_link">ovde</a>.
+	    	Na osnovu te ankete biće formiran raspored sedenja za ispit. Anketa će
+	    	biti aktivna do 08.06.2020. do 9h. Raspored sedenja će biti okačen sat
+	    	vremena nakon završetka prijave. Mole se studenti da sačekaju celokupne
+	    	rezultate ispita, i da se prijave tek onda kada saznaju da li su stekli
+	    	uslov za izlazak na praktični.</p>
+		<p class='datum_objavljivanja'> 03.06.2020. </p>
+		</div>
+
+		<div class="obavestenje">
+                    <h4> Rezultati pismenog dela u ispitnom roku Jun 2 </h4>
+
+                    <ul>
+
+                    <li> 1. tok <br>
+                            <ul>
+                                <li> Rezultate teorijskog dela ispita možete videti
+				      <a href="/2020/ispiti/rezultati/101_teorija_jun2.pdf">ovde</a>.
+                                     <br>
+                                     Uvid u teorijske radove je putem mejla.
+				</li>
+
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="https://docs.google.com/spreadsheets/d/1ElP16ZLUTRXzO3wyWklesZTO0xyYVS6witlv_P5NDws/edit?usp=sharing">ovde</a>.
+				</li>
+
+                            </ul>
+                        </li>
+
+                        <li> 2. tok <br>
+                            <ul>
+				<li> Rezultate teorijskog dela ispita možete videti
+				      <a href="/2020/ispiti/rezultati/102_teorija_jun2.pdf">ovde</a>.
+				</li>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti
+				     <a href="/2020/ispiti/rezultati/102_kval_jun2.pdf">ovde</a>.
+ 				</li>
+                            </ul>
+                        </li>
+
+                        <li> 3. tok <br>
+                            <ul>
+                              <li> Rezultate teorijskog dela ispita možete videti
+           <a href="2020/ispiti/103_teorija_jun2.pdf">ovde</a>.
+           <br>
+           Uvid u teorijske radove će biti održan u četvrtak, 09.07.2020, u 09h u 716 (proveriti dan ranije da li je došlo do izmene termina)
+           <br>
+            </li>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti
+				     <a href="https://docs.google.com/spreadsheets/d/1tOVcVzL-mBn6Z44YK895F2oW-urJqDNzw5hb67wOnKU/edit?usp=sharing">ovde</a>.
+             <br>
+              </li>
+                            </ul>
+                        </li>
+
+
+                   <li> 4. tok <br>
+                            <ul>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti
+				     <a href="/2020/ispiti/104_kvalifikacioni_jun2.pdf">ovde</a>.
+				</li>
+                           </ul>
+                        </li>
+
+	            </ul>
+
+                    <ul>
+<!--
+			<li>Uvid u radove za 1. tok kod Jelene Marković je 24.06.2020. u 14h na Trgu (kancelarija 716). <br>Zbog uvida u brojčano stanje studenata koji žele uvid, poželjno je najaviti se mejlom.</li>
+-->
+	              <li>Uvid u radove za 2. tok kod Nevene Ćirić je 05.07.2020. u 13h na Trgu (kancelarija 716)</li>
+
+		      <li>Zbog situacije sa virusom, uvid za 3. tok poželjno je obaviti mejlom. Ukoliko neko želi uživo, neka piše mejl, pa ćemo se dogovoriti oko termina. Uvid za 3. tok drži Filip Vidojević.</li>
+
+<li>Zbog situacije sa virusom, uvid za 1. tok poželjno je obaviti mejlom. Ukoliko neko želi uživo, neka piše mejl, pa ćemo se dogovoriti oko termina. Uvid za 1. tok drži Jelena Marković.</li>
+
+
+			<li>Uvid u radove za 4. tok kod Božice Kalinić je 05.07.2020. u 12h na Trgu (kancelarija 716)</li>
+
+                    </ul>
+
+                    <p class="datum_objavljivanja"> 01.07.2020. </p>
+                </div>
+
+	<div class="obavestenje">
+	    <h4> Raspored sedenja za kvalifikacioni deo ispita </h4>
+	    <p> Raspored se nalazi <a href="https://docs.google.com/spreadsheets/d/12iDRgAENslsN0AEVED2_o8YziZHnfES37h58P1vUtys/edit?usp=sharing">ovde</a>
+	    </p>
+	    <p class='datum_objavljivanja'>30.06.2020.</p>
+            </div>
+
+
+	    <div class="obavestenje">
+	    <h4> Nošenje maski na ispitu </h4>
+	    <p> Zbog pogoršanja zdravstvene situacije u Beogradu, molimo sve studente koji polažu ispit iz Programiranja 2 u roku
+		Jun 2, da u interesu zdravlja svih prisutnih nose maske u toku ispita.
+	    </p>
+	    <p class='datum_objavljivanja'>28.06.2020.</p>
+            </div>
+
+	    <div class="obavestenje">
+            <h4> Ukupni rezultati ispita - Jun 1 </h4>
+
+                    <ul>
+                    <li> 1. tok - <a href="/2020/ispiti/101_ukupno_jun1.pdf">ovde</a> </li>
+
+
+                        <li> 2. tok - <a href="/2020/ispiti/rezultati/102_ukupno_jun1.pdf">ovde</a> </li>
+
+                    <li> 3. tok - <a href="https://docs.google.com/spreadsheets/d/1K8LRtqsaXOdiPAFiu11Bo6edKAAq8VNi7k3bzAgS1i8/edit?usp=sharing">ovde</a> </li>
+
+                  <li> 4. tok - <a href="https://docs.google.com/spreadsheets/d/1yvwz_xus5Vg8c1TxFFDt44JSW2QwmFSl6lE9iALpB5A/edit#gid=0">zadaci</a>
+<a href="http://poincare.matf.bg.ac.rs/~ivan/?content=p2mnvr">teorija</a> </li>
+
+                    </ul>
+
+		<ul>
+			<li> Uvid za tok 1O1 biće održan u ponedeljak, 29.06.2020. u 11h (kabinet 716). Uvid će držati Božica
+                             Kalinić (ko želi može da obavi uvid putem mejla). Termin za upis ocena će biti okačen naknadno.
+			</li>
+			<li> Uvid u radove za 2. tok kod Nevene Ćirić je 30.06.2020. u 16h na Trgu (kancelarija 716)
+			</li>
+			<li> Uvid za tok 1O3 biće održan u ponedeljak, 29.06.2020. u 12:30 (kabinet 716). Uvid će držati Filip
+			     Vidojević (ko želi može da obavi uvid putem mejla).
+			</li>
+			<li> Uvid za tok 104 biće održan u ponedeljak, 29.06.2020. u 18:00 (kabinet 716). Uvid će držati Jelena
+			     Marković (ko želi može da obavi uvid putem mejla i pre dogovorenog termina). Obavezna je najava
+ 			     mejlom za studente koji dolaze na uvid.
+                        </li>
+		</ul>
+		<p class='datum_objavljivanja'>26.06.2020.</p>
+                </div>
+
+
+	<div class="obavestenje">
+	<h4> Prijava kvalifikacionog dela ispita za JUN2 </h4>
+	<p>Ako planirate da izađete na ispit, molim Vas popunite anketu koja se nalazi <a href="https://docs.google.com/forms/d/e/1FAIpQLSedV78OjHghzc3jD93LkRDbZpKZGbTe_7wnBUGDeT3gHZGxSw/viewform?usp=sf_link">ovde</a>. Anketa će biti aktivna do 30.06.2020. do 9h. Raspored sedenja će biti okačen sat vremena nakon kraja prijave.</p>
+	<p class='datum_objavljivanja'> 25.06.2020. </p>
+	</div>
+
+	<div class="obavestenje">
+	<h4> Raspored sedenja za praktični deo ispita </h4>
+	<p>Raspored sedenja za praktični deo ispita se nalazi <a href="https://docs.google.com/spreadsheets/d/1ACta3F3ZgNmlUth2I7ingrPIYfBmBP1Bs4oOpeQ2OQk/edit?usp=sharing">ovde</a></p>
+	<p class='datum_objavljivanja'> 25.06.2020. </p>
+	</div>
+
+	<div class="obavestenje">
+	<h4> Prijava praktičnog dela ispita </h4>
+	<p> Ako planirate da izađete na praktični deo ispita, molim Vas popunite anketu, koja se nalazi
+	    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdgUkucOLlXBXVrNyrAtAWmIcbaCMqFXv4I9U96YDi7FNuE-g/viewform?usp=sf_link">ovde</a>.
+	    Na osnovu te ankete biće formiran raspored sedenja za ispit. Anketa će
+	    biti aktivna do 25.06.2020. do 9h. Raspored sedenja će biti okačen sat
+	    vremena nakon završetka prijave. Mole se studenti da sačekaju celokupne
+	    rezultate ispita, i da se prijave tek onda kada saznaju da li su stekli
+	    uslov za izlazak na praktični.</p>
+	<p class='datum_objavljivanja'> 22.06.2020. </p>
+	</div>
+
+	<div class="obavestenje">
+                    <h4> Rezultati pismenog dela u ispitnom roku Jun 1 </h4>
+
+                    <ul>
+                    <li> 1. tok <br>
+                            <ul>
+                                <li> Rezultate teorijskog dela ispita možete videti
+				      <a href="/2020/ispiti/rezultati/101_teorija_jun1.pdf">ovde</a>.
+                                     <br>
+                                     Uvid u teorijske radove je putem mejla.
+				</li>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="https://docs.google.com/spreadsheets/d/15VRs33nt3W9ObD-U8LPDaKCB0OiUPUCuD2iP9tbfId0/edit?usp=sharing">ovde</a>.
+				</li>
+                            </ul>
+                        </li>
+
+                        <li> 2. tok <br>
+                            <ul>
+				<li> Rezultate teorijskog dela ispita možete videti
+				      <a href="/2020/ispiti/rezultati/102_teorija_jun1.pdf">ovde</a>.
+				</li>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti
+				     <a href="/2020/ispiti/rezultati/102_kval_jun1.pdf">ovde</a>.
+ 				</li>
+                            </ul>
+                        </li>
+
+                        <li> 3. tok <br>
+                            <ul>
+                                <li> Rezultate teorijskog i kvalifikacionog dela ispita možete videti
+				     <a href="https://docs.google.com/spreadsheets/d/1cQtE-Kinp3-xbJOZhfPtqG6z8j-UW5EjGytEu-FBxz4/edit?usp=sharing">ovde</a>.
+             <br>Uvid u teorijski deo biće održan u sredu, 24.6.2020. u 9:30 u 716 na Studentskom trgu.
+              </li>
+                            </ul>
+                        </li>
+
+
+
+                   <li> 4. tok <br>
+                            <ul>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti
+				     <a href="https://docs.google.com/spreadsheets/d/1gegG2cLZHeuVhijQrVMouxZBSfO6wH8x4pdcv1H9Htw/edit?usp=sharing">ovde</a>.
+				</li>
+                           </ul>
+                        </li>
+
+	            </ul>
+
+                    <ul>
+			<li>Uvid u radove za 1. tok kod Jelene Marković je 24.06.2020. u 14h na Trgu (kancelarija 716). <br>Zbog uvida u brojčano stanje studenata koji žele uvid, poželjno je najaviti se mejlom.</li>
+	              <li>Uvid u radove za 2. tok kod Nevene Ćirić je 21.06.2020. u 14h na Trgu (kancelarija 716)</li>
+		      <li>Uvid u radove za 3. tok kod Filipa Vidojevića je 22.06.2020. u 17h na Trgu (kabinet 716)</li>
+			<li>Uvid u radove za 4. tok kod Božice Kalinić je 24.06.2020. u 15h na Trgu (kancelarija 716)</li>
+                    </ul>
+
+                    <p class="datum_objavljivanja"> 19.06.2020. </p>
+                </div>
+
+	<div class="obavestenje">
+	<h4> Raspored sedenja za kvalifikacioni deo ispita </h4>
+	<p> Raspored se nalazi <a href="https://docs.google.com/spreadsheets/d/1GehaeQERb3E91XKDfA8ecFaiACY5FbgLNglF2An_LAg/edit?usp=sharing">ovde</a>.</p>
+	<p class='datum_objavljivanja'> 18.06.2020. </p>
+	</div>
+
+	<div class="obavestenje">
+	<h4> Prijava ispita </h4>
+	<p> Ako planirate da izađete na ispit, molim Vas popunite anketu, koja se nalazi ovde. Na osnovu te ankete biće formiran raspored sedenja za ispit. Anketa će biti aktivna do 18.06.2020. do 10h. Raspored sedenja će biti okačen sat vremena nakon završetka prijave.</p>
+	<p class='datum_objavljivanja'> 09.06.2020. </p>
+	</div>
+
+	<div class="obavestenje">
+	<h4> Gradivo za teorijski deo ispita </h4>
+	<p> Na ispitima iz Programiranja 2 neće biti pitanja iz oblasti Algoritmi i izračunljivost. </p>
+	<p class='datum_objavljivanja'> 07.06.2020. </p>
+	</div>
+
+	<div class="obavestenje">
+	<h4> Konsultacije za grupe 1O1A i 1O3A</h4>
+	<p> Konsultacije će biti održane u utorak, 02.06, u BIM-u od 9 do 11h. Na konsultacijama će se raditi neki od prethodnih rokova, uz pitanja studenata.
+	</p>
+	<p class='datum_objavljivanja'> 30.05.2020. </p>
+	</div>
+
+
+	<div class="obavestenje">
+	<h4> Konsultacije u periodu 25.05.2020. - 05.06.2020. </h4>
+	<p> Od 25.5.2020. do 05.6.2020. konsultacije će se održavati u prostorijama fakulteta ili online (putem Zoom sastanaka), u
+ 	    dogovoru sa studentima zainteresovanim za konsultacije. Termini koje su asistenti namenili za konsultacije su sledeći:
+	    <ul>
+		<li> kod asistenta Filipa Vidojevića - u nedelji počev od 01.06. (biće naknadno objavljeno) </li>
+		<li> kod asistenta Miodraga Radojevića - 01.06. u 9h online </li>
+		<li> kod asistentkinje Nevene Ćirić - u petak 29.05. i 05.06. u 10h (zbornica u Svetog Nikole) <br>
+		     (Potrebno je prijaviti se za željeni termin putem ankete -
+		      <a href="https://docs.google.com/forms/d/18LIhCtCO43Mqc8hgkr0eqoGgZb0BDEbsoUxYQRCe7s8"> ovde </a>)
+		</li>
+		<li> kod asistentkinje Jelene Marković - svakog dana u periodu 25.05. - 31.05. u terminu 15-17h online <br>
+                     (Ukoliko ste zainteresovani, potrebno je da se prijavite tako što ćete dan ranije (do 15h) poslati mejl sa
+                      svojim imenom i prezimenom, indeksom, nazivom predmeta i spiskom pitanja i eventualno zadacima. Pojašnjenja
+                      takođe dolaze u obzir. Takođe, možete da se prijavite i da slušate šta drugi imaju da pitaju. Potom ću ja
+                      poslati šifru za pristup sastanku svima koji su se prijavili. Ukoliko se niko ne prijavi, sastanak se neće
+                      držati.)
+		</li>
+		<li> kod asistentkinje Božice Kalinić - petak u 11h online </li>
+	    </ul>
+	    Ukoliko vam navedeni termini ne odgovaraju, obratiti se svom asistentu putem mejla radi dogovora o terminu koji oboma
+	    odgovara.
+	</p>
+	<p class='datum_objavljivanja'> 23.05.2020. </p>
+	</div>
+
+	<div class="obavestenje">
+	<h4> Nadoknada za tok 1o1 </h4>
+	<p> U ponedeljak 18.05.2020. u 10h biće održana nadoknada časa vežbi.
+	</p>
+	<p class='datum_objavljivanja'> 13.05.2020. </p>
+	</div>
+
+	<div class="obavestenje">
+	<h4> Nadoknada za tok 1o2 </h4>
+	<p> U ponedeljak 11.05.2020. 16-18h biće održana nadoknada časa vežbi na kome će biti rađen uvod u binarna pretraživačka
+            stabla, odnosno zadatak 4.14.
+	</p>
+	<p class='datum_objavljivanja'> 09.05.2020. </p>
+	</div>
+
+	<div class="obavestenje">
+	<h4> Nadoknade časova od petka 1.5.2020. </h4>
+	<p> Vežbe:
+            <ul>
+		<li> Tok 1o2 - umesto u petak 1.5. čas će biti održan četvrtak 30.04. 17-19h </li>
+		<li> Tok 1o4 - umesto u petak 1.5. čas će biti održan u četvrtak 30.04. 18-20h </li>
+	    </ul>
+	<p class='datum_objavljivanja'> 28.04.2020. </p>
+	</div>
+
+	<div class="obavestenje">
+	<h4> Raspodela poena i plan organizacije ispita u novonastalim okolnostima </h4>
+	<ul>
+		<li> Osvojeni poeni na praktikumima će biti skalirani na 5 poena koliko inače nosi aktivnost na praktikumima. </li>
+		<li> Ispit u celini nosi 100 poena i oni će biti raspodeljeni na sledeći način:
+			<ul>
+				<li> Teorijski deo - nosi 50 poena (prag 30%) i radi se 1h </li>
+				<li> Kvalifikacioni deo - nosi 15 poena (prag 50%) i radi se 1h (2 zadatka) </li>
+ 				<li> Praktični deo - nosi 35 poena (prag 30%) i radi se 2h (3 zadatka) </li>
+			</ul>
+		</li>
+	</ul>
+
+	Jednom položen bilo koji od delova ispita važi u svim narednim rokovima, pri čemu se uslov za izlazak na praktični
+        deo ispita stiče tek nakon uspešno položenog teorijskog i kvalifikacionog dela.
+	<p class='datum_objavljivanja'> 21.04.2020. </p>
+	</div>
+
+	<div class="obavestenje">
+	<h4> Nadoknade časova od petka 17.04. i ponedeljka 20.04. </h4>
+	<p> Vežbe:
+            <ul>
+		<li> Tok 1o1 - umesto u ponedeljak 20.04. čas će biti održan u utorak 21.04. 9-11h </li>
+		<li> Tok 1o2 - umesto u petak 17.04. čas će biti održan u sredu 15.04. 13-15h </li>
+		<li> Tok 1o4 - umesto u petak 17.04. čas će biti održan u četvrtak 16.04. 17-19h </li>
+	    </ul>
+	    Praktikumi:
+	    <ul>
+		<li> Tok 1o1 - umesto u ponedeljak 20.04. čas će biti održan u utorak 21.04. 8-9h </li>
+	    </ul>
+	<p class='datum_objavljivanja'> 14.04.2020. </p>
+	</div>
+
+	<div class="obavestenje">
+	<h4> Termini vežbi, praktikuma i konsultacija 30.03. - neodređeno </h4>
+	<p> <b><u>Vežbe:</u></b>
+ 	    <ul>
+		<li> Tok 1o1 kod asistenta Miodraga Radojevića - ponedeljkom 9-11h </li>
+		<li> Tok 1o2 kod asistentkinje Nevene Ćirić - petkom 11-13h </li>
+		<li> Tok 1o3 kod asistentkinje Jelene Marković - četvrtkom 13-15h </li>
+		<li> Tok 1o4 kod asistentkinje Božice Kalinić - petkom 11-13h </li>
+	    </ul>
+	<p>
+
+	<p> <b><u>Praktikumi:</u></b>
+ 	    <ul>
+		<li> Tok 1o1 kod asistenta Miodraga Radojevića - ponedeljkom 8-9h </li>
+		<li> Tok 1o2 kod asistentkinje Jelene Marković - utorkom 10-11h </li>
+		<li> Tok 1o3 kod asistentkinje Božice Kalinić - sredom 14-15h </li>
+		<li> Tok 1o4 kod asistentkinje Božice Kalinić - sredom 13-14h </li>
+	    </ul>
+	<p>
+
+	<p> <b><u>Konsultacije:</u></b>
+	    <ul>
+		<li> Tok 1o1 kod asistenta Miodraga Radojevića
+		     <ul>
+            		<li> ponedeljkom 11-12h </li>
+			<li> sredom 9-10h </li>
+			<li> link ka spisku već postavljenih pitanja -
+			     <a href="https://docs.google.com/spreadsheets/d/1iDRnufv0XUEnhWbewBJZ0aUlffKHZdabcy9yF-5xrI8/edit?usp=sharing">ovde</a>
+			</li>
+			<li> link ka anketi za postavljanje pitanja -
+			     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfz_oZOGmlKaraeDb4RrslSmpqzBpABfx62cVLPyLpj3KPnLg/viewform?vc=0&c=0&w=1">ovde</a>
+			</li>
+		     </ul>
+		</li>
+		<li> Tok 1o2 kod asistentkinje Nevene Ćirić
+		     <ul>
+			<li> sredom 13-14h </li>
+			<li> petkom 15-16h </li>
+			<li> link ka spisku već postavljenih pitanja -
+			     <a href="https://drive.google.com/open?id=1vyPwJ2Eccf_mJ9ojDOs7c463cko_axXmbOYqwA6DcTo">ovde</a>
+			</li>
+			<li> link ka anketi za postavljanje pitanja -
+			     <a href="https://drive.google.com/open?id=1RKi6TSdZsQRjUEbVv8bZg5XqQYlCe5EoNEswEJBi2GI">ovde</a>
+			</li>
+		     </ul>
+		</li>
+		<li> Tok 1o3 kod asistentkinje Jelene Marković
+		     <ul>
+			<li> četvrtkom 17-18h </li>
+			<li> petkom 16-17h </li>
+			<li> link ka spisku već postavljenih pitanja -
+			     <a href="https://docs.google.com/spreadsheets/d/1gX1qBY-8a-odCc9EjPE71d-N-EC6BzQ2_5jVPIWXqlc/edit#gid=1588241680">ovde</a>
+			</li>
+			<li> link ka anketi za postavljanje pitanja -
+			     <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVpxLsOb7Mb7YgnhELB7ySOGaOi6pBZYJ-n1EyzX9gE0cCaA/viewform">ovde</a>
+			</li>
+		     </ul>
+		</li>
+		<li> Tok 1o4 kod asistentkinje Božice Kalinić
+		     <ul>
+			<li> utorkom 13-14h </li>
+			<li> petkom 13-14h </li>
+			<li>link ka spisku već postavljenih pitanja -
+			     <a href="https://docs.google.com/spreadsheets/d/1d4icyEhyYhu1JQeMUv6OxGVeb_nx3cAkRArrEKK557k/edit?usp=sharing">ovde</a> </li>
+			<li> link ka anketi za postavljanje pitanja -
+			     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDUpwJMtV7_1fAMSxFdO18MeDIUytbQftMabE_9nFdjBWAMQ/viewform?usp=sf_link">ovde</a></li>
+		     </ul>
+		</li>
+	    </ul>
+
+	    Da biste se prijavili za konsultacije potrebno je da popunite anketu kod asistenta koji vam drži vežbe.
+	    Pre nego što popunite anketu proverite u odgovarajućoj tabeli pitanja koja su već postavili ostali studenti, i ukoliko
+	    je već postavljeno pitanje koje vas interesuje, nemojte ga duplirati (u tom slučaju uopšte ne popunjavate anketu, već
+            se samo pojavljujete na Zoom sastanku kako biste čuli odgovor). <u> Spisak postavljenih pitanja se 'čisti' nakon svakih
+            održanih konsultaicija, tako da se sva vaša pitanja koja se dodaju nakon toga odnose na prvi sledeći termin
+	    konsultacija za vaš tok. </u> Ukoliko se u toku konsultacija setite još nekog pitanja koje niste prethodno naveli
+	    popunjavanjem ankete, uvek se možete uključiti u toku Zoom sastanka i postaviti pitanje asistentu. </br>
+	    <b><u>NAPOMENA:</u></b> Ukoliko ne bude nijednog postavljenog pitanja putem ankete, konsultacije se neće održati
+	   (asistent neće pokrenuti Zoom sastanak u tom terminu).
+	</p>
+
+	<p class='datum_objavljivanja'> 28.03.2020. </p>
+	</div>
+
+	<div class="obavestenje">
+	<h4> Konsultacije za nedelju 23.03. - 27.03. </h4>
+	<p> Konsultacije će ove nedelje biti u jednom terminu za svaki tok, dok će u počev od sledeće nedelje uvek biti ponuđena
+            dva termina. Da biste se prijavili za konsultacije potrebno je da popunite anketu kod asistenta koji vam drži vežbe.
+	    Pre nego što popunite anketu proverite u odgovarajućoj tabeli pitanja koja su već postavili ostali studenti, i ukoliko
+	    je već postavljeno pitanje koje vas interesuje, nemojte ga duplirati (u tom slučaju uopšte ne popunjavate anketu, već
+            se samo pojavljujete na Zoom sastanku kako biste čuli odgovor). Ukoliko se u toku konsultacija setite još nekog
+            pitanja koje niste prethodno naveli popunjavanjem ankete, uvek se možete uključiti u toku Zoom sastanka i postaviti
+            pitanje asistentu. <b><u>NAPOMENA:</u></b> Ukoliko ne bude nijednog postavljenog pitanja putem ankete, konsultacije se
+ 	    neće održati (asistent neće pokrenuti Zoom sastanak u tom terminu).
+	    <br/><br/>
+	    Termini konsultacija za ovu nedelju su:
+	    <ul>
+		<li> Tok 1o1 kod asistenta Miodraga Radojevića - sreda 25.03.2020. 9-10h
+		     <ul>
+			<li> link ka spisku već postavljenih pitanja -
+			     <a href="https://docs.google.com/spreadsheets/d/1iDRnufv0XUEnhWbewBJZ0aUlffKHZdabcy9yF-5xrI8/edit?usp=sharing">ovde</a>
+			</li>
+			<li> link ka anketi za postavljanje pitanja -
+			     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfz_oZOGmlKaraeDb4RrslSmpqzBpABfx62cVLPyLpj3KPnLg/viewform?vc=0&c=0&w=1">ovde</a>
+			</li>
+		     </ul>
+		</li>
+		<li> Tok 1o2 kod asistentkinje Nevene Ćirić - petak 27.03.2020. 14-15h
+		     <ul>
+			<li> link ka spisku već postavljenih pitanja -
+			     <a href="https://drive.google.com/open?id=1vyPwJ2Eccf_mJ9ojDOs7c463cko_axXmbOYqwA6DcTo">ovde</a>
+			</li>
+			<li> link ka anketi za postavljanje pitanja -
+			     <a href="https://drive.google.com/open?id=1RKi6TSdZsQRjUEbVv8bZg5XqQYlCe5EoNEswEJBi2GI">ovde</a>
+			</li>
+		     </ul>
+		</li>
+		<li> Tok 1o3 kod asistentkinje Jelene Marković - petak 27.03.2020. 16-17h
+		     <ul>
+			<li> link ka spisku već postavljenih pitanja -
+			     <a href="https://docs.google.com/spreadsheets/d/1gX1qBY-8a-odCc9EjPE71d-N-EC6BzQ2_5jVPIWXqlc/edit#gid=1588241680">ovde</a>
+			</li>
+			<li> link ka anketi za postavljanje pitanja -
+			     <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVpxLsOb7Mb7YgnhELB7ySOGaOi6pBZYJ-n1EyzX9gE0cCaA/viewform">ovde</a>
+			</li>
+		     </ul>
+		</li>
+		<li> Tok 1o4 kod asistentkinje Božice Kalinić - petak 27.03.2020. 13-14h
+		     <ul>
+			<li>link ka spisku već postavljenih pitanja -
+			     <a href="https://docs.google.com/spreadsheets/d/1d4icyEhyYhu1JQeMUv6OxGVeb_nx3cAkRArrEKK557k/edit?usp=sharing">ovde</a> </li>
+			<li> link ka anketi za postavljanje pitanja -
+			     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDUpwJMtV7_1fAMSxFdO18MeDIUytbQftMabE_9nFdjBWAMQ/viewform?usp=sf_link">ovde</a></li>
+		     </ul>
+		</li>
+	    </ul>
+	    <p class='datum_objavljivanja'> 24.03.2020. </p>
+	</div>
+
+
+	<div class="obavestenje">
+	<h4> Uputstvo za uključivanje na Zoom sastanke </h4>
+	<p> Detaljno uputstvo možete pronaći <a href="http://enastava.matf.bg.ac.rs/~nevena_ciric/uputstvoZoom.pdf">ovde.</a>
+            Na mejl koji vam stoji na Hipatiji smo vam poslali Personal ID asistenata koji vam drže vežbe i praktikum.
+	    <br/><br/>
+	    Molimo vas da se pridržavate vaše grupe za vežbe i praktikume. Ograničenje za broj učesnika na Zoom sastanku je
+            100, pa se može desiti da 101. učesnik bude baš student kome je sastanak namenjen i da njemu ne bude omogućen ulazak
+            na sastanak. Uključivanjem na Zoom sastanak koji nije vama namenjen zauzimate mesto studentu kome jeste namenjen.
+	</p>
+	<p class='datum_objavljivanja'> 22.03.2020. </p>
+	</div>
+
+
+	<div class="obavestenje">
+	<h4> Održavanje časova vežbi, praktikuma i konsultacija za sledeću nedelju </h4>
+	<p> <b><u>Vežbe</u></b> će se održavati putem Zoom sastanaka u istom terminu za obe grupe u okviru istog toka.
+	    Termini za sledeću nedelju su:
+ 	    <ul>
+		<li> Tok 1o1 kod asistenta Miodraga Radojevića:
+		     <ul>
+			<li> ponedeljak 23.03.2020. 9-12h  <br/>
+			     (zadaci: shell sort (3.12), 3.18, 3.20, 3.23, 3.24)
+			</li>
+		     </ul>
+		</li>
+		<li> Tok 1o2 kod asistentkinje Nevene Ćirić:
+		     <ul>
+			<li> sreda 25.03.2020. 11-13h <br/>
+			     (zadaci: insertion sort, shell sort, merge sort, quick sort (3.12), 3.18)
+			</li>
+			<li> petak 27.03.2020. 11-13h <br/>
+			     (zadaci: 3.20, 3.23, 3.24)
+			</li>
+		     </ul>
+		</li>
+		<li> Tok 1o3 kod asistentkinje Jelene Marković:
+		     <ul>
+			<li> ponedeljak 23.03.2020. 11-13h <br/>
+			     (zadaci: 3.12, 3.18)
+			</li>
+			<li> četvrtak 26.03.2020. 13-15h <br/>
+			     (zadaci: 3.20, 3.23, 3.24)
+			</li>
+		     </ul>
+		</li>
+		<li> Tok 1o4 kod asistentkinje Božice Kalinić:
+		     <ul>
+			<li> petak 27.03.2020. 11-12h <br/>
+			     (zadaci: 3.23, 3.24)
+			</li>
+		     </ul>
+		</li>
+	    </ul>
+	</p>
+	<p> Vežbe će počinjati u pun sat i bez pauza u maksimalnom trajanju od 1h/2h/3h. <br/><br/>
+
+	    Ovakav raspored održavanja vežbi važi samo za sledeću nedelju, dok ćete o rasporedu za dalje biti obavešteni naknadno.
+	    Kako su različite grupe prešle do sada različito gradivo, potrebno je da se grupe izjednače i da na dalje idemo svi
+            istim tempom. Shodno tome imate spisak zadataka predviđen za svaki od časova ponaosob, pa se možete uključiti u
+            odgovarajući Zoom sastanak, u zavisnosti od toga koje ste gradivo do sada odslušali. Na Zoom sastanak se ne morate
+            uključivati odmah na početku, već možete proceniti otprilike u kom trenutku će početi deo koji vas zanima. <br/><br/>
+
+	    Informacije o načinu na koji ćete se uključivati u Zoom sastanke biće objavljen uskoro na stranici predmeta.
+	</p>
+	<p> <b><u>Praktikumi</u></b> će se u toku sledeće nedelje održavti u terminima po dosadašnjem rasporedu časova, dok će u
+            zavisnosti od vašeg (ne)interesovanja da se uključite i učestvujete u održavanju časa postavljanjem pitanja razmotriti
+            o spajanju grupa za kasnije. O tome ćete biti obavešteni naknadno. Na praktikumima će asistent raditi zadatke koje
+            biste inače radili vi, dok biste vi trebali da postavljate pitanja vezana za zadatke koji se rade, kao i uopšteno za
+            temu koje se obrađuje.
+	    <br/><br/>
+
+	    Praktikumi će počinjati u pun sat i maksimalno trajati 1h.
+	</p>
+	<p> <b><u>Konsultacije</u></b> će odžavati dva puta nedeljno u trajanju od 1h putem Zoom sastanaka. Moći ćete unapred da
+            zapišete u deljeni Google Sheet pitanja na koja biste želeli da dobijete odgovor na konsultacijama. Naravno, i u toku
+            samog Zoom sastanka ćete moći da postavljate pitanja. Informacije o terminima konsultacija i linkovi ka deljenim
+            fajlovima za postavljanje pitanja biće postavljeni naknadno. <br/><br/>
+
+	    Naravno, ukoliko je potrebno da asistent pogleda kod koji ste pisali, uvek se možete obratiti svom asistentu mejlom.
+	</p>
+
+	<p> <b><u> Vežbe, praktikumi i konsultacije će biti snimani i snimci će Vam biti dostupni da ih pogledate ukoliko niste
+            bili u mogućnosti da se uključite u Zoom sastanak. Međutim, poželjno je da se što više Vas koji su u mogućnosti uključi
+            u sastanke i učestvuje u njima postavljanjem pitanja. To će vam pomoći da redovno učite i da na vreme razrešite
+            eventualne nedoumice.
+	</u></b> </p>
+	<p class='datum_objavljivanja'> 20.03.2020. </p>
+	</div>
+
+        <div class="obavestenje">
+        <h4> Predispitne obaveze </h4>
+        <p> Kolokvijum iz Programiranja 2 neće biti održan. Poeni sa kolokvijuma se prebacuju na ispit. Poeni za aktivnost na praktikumima biće dodeljeni prema dosadašnjoj aktivnosti studenata.
+        </p>
+        <p class='datum_objavljivanja'> 18.03.2020. </p>
+        </div>
+
+        <div class="obavestenje">
+		<h4> Održavanje nastave u novonastalim okolnostima kod prof. Graovac </h4>
+		<p> Mole se svi studenti koji žele da prate predavanja na daljinu iz predmeta Programiranje 2 kod profesorke Jelene Graovac da, što je moguće pre, popune sledeću Google formu: <a href="https://drive.google.com/open?id=1z4TUP3VIIucly5rMejxStNmqyFUp5FhVA2DCDUV3DjU">Prijava za predavanja na daljinu</a>. Na osnovu unetih podataka, biće oformljena grupa preko koje ćete blagovremeno dobijati sve informacije neophodne za uspešno ovladavanje gradiva iz ovog predmeta, kao što su link preko koga će svake nedelje biti održavana predavanja/konsultacije na daljinu, različita uputstva, odgovori na pristigla pitanja i slično.
+		</p>
+		<p class='datum_objavljivanja'> 17.03.2020. </p>
+	    </div>
+
+	    <div class="obavestenje">
+		<h4> Održavanje nastave u novonastalim okolnostima </h4>
+		<p> U svetlu tekuće zdravstvene situacije, nastava iz Programiranja 2 se
+		    do daljnjeg neće sprovoditi u prostorijama fakulteta. Sva nastava
+		    iz ovog predmeta se odlaže do nedelje koja počinje 23. marta i od tada
+ 		    se planira njeno održavanje putem interneta. O detaljima organizacije
+		    ovog vida nastave bićete detaljnije obavešteni u drugoj polovini
+		    nedelje, ali on će podrazumevati dostupnost snimaka predavanja i vežbi
+		    i upotrebu konferencijskih alata. Do početka nastave potrebno je da
+		    instalirate alat Zoom (https://zoom.us/) i isprobate ga sa drugim
+		    kolegama.
+		</p>
+		<p class='datum_objavljivanja'> 15.03.2020. </p>
+	    </div>
+
+	    <div class="obavestenje">
+	        <h4> Promena sale za časove vežbi za grupu 1o1b i praktikuma P2 </h4>
+		<p> U ponedeljak 02.03.2020. vežbe i praktikum će biti održani u sali N202 umesto u sali N201 </p>
+		<p class='datum_objavljivanja'> 29.02.2020. </p>
+	    </div>
+
+	    <div class="obavestenje">
+		<h4>Nadoknada časova vežbi za grupu 1o1b i praktikuma P2</h4>
+		<ul>
+		   <li> Nadoknada vežbi će biti održana u ponedeljak 24.02.2020. u učionici N201 u terminu 14h-16h </li>
+		   <li> Nadoknada praktikuma će biti održana u ponedeljak 24.02.2020. u učionici N201 u terminu 16-17h </li>
+		</ul>
+		<p class='datum_objavljivanja'> 23.02.2020. </p>
+            </div>
+
+	    <div class="obavestenje">
+		<h4>Upis ocena iz januarskog roka za tokove 1O2, 1O3 i 1O4</h4>
+		<p>Upis ocena iz januarskog roka za tokove 1O2, 1O3 i 1O4, će biti održan
+		u petak 21.02. u 15:30 u prostorijama u Siminoj 2.</p>
+		<p class='datum_objavljivanja'>17.02.2020. </p>
+            </div>
+
+	    <div class="obavestenje">
+	        <h4> Časovi vežbi za grupe 1o1a i 1o3a u narednoj nedelji </h4>
+		<p> Grupa 1o1a:
+		    <ul>
+		      <li> redovan čas utorak 18.02.2020. 9-11h u učionici BIM </li>
+		      <li> nadoknada petak 21.02.2020. 14-16h u učionici N225 </li>
+		    </ul>
+		</p>
+		<p> Grupa 1o3a:
+		    <ul>
+		      <li> nadoknada četvrtak 20.02.2020. 9-11h u učionici N253 </li>
+		      <li> nadoknada petak 21.02.2020. 12-14h u učionici N152 </li>
+		    </ul>
+		</p>
+		<p class='datum_objavljivanja'> 16.02.2020. </p>
+	    </div>
+
+	    <div class="obavestenje">
+		<h4>Nadoknada praktikuma za grupu p11</h4>
+		<p> Nadoknada ce biti odrzana u petak 21.02.2020. u ucionici N201 u terminu 15h-16h</p>
+		<p class='datum_objavljivanja'>15.02.2020. </p>
+            </div>
+
+            <div class = "obavestenje">
+		<h4> Grupa 1o3b - čas praktikuma neće biti održan </h4>
+		<p> Čas koji je trebalo da se održi danas od 12-13h neće biti održan. Detaljnije na sajtu asistenta
+                    Jelene Marković. </p>
+	        <p class='datum_objavljivanja'> 14.02.2020. </p>
+	    </div>
+
+            <div class="obavestenje">
+                 <h4> Vežbe za grupe 1o2a i 1o2b </h4>
+                 <p>  Nadoknada za grupu 1o2a vežbi koji nisu održane 06.02.2020. biće
+		      u utorak 11.02.2020. 16-18h u JAG1.
+		 </p>
+		 <p>
+		      Ubuduće vežbe će biti u sledećim terminima:
+		      <ul>
+			 <li> za grupu 1o2a - petkom 11-13h u N153 (zgrada u ulici Sv. Nikole) </li>
+			 <li> za grupu 1o2b - NEMA PROMENE </li>
+		      </ul>
+		      <u>Promena važi počev od ove nedelje.</u> Očekujte da će ove promene uskoro biti ozvaničene
+                      i u rasporedu časova.
+                 </p>
+		 <p class='datum_objavljivanja'> 11.02.2020. </p>
+            </div>
+
+            <div class="obavestenje">
+                 <h4> Vežbe za grupe 1o1a i 1o3a </h4>
+                 <p>  Grupa 1o1a i 1o3a neće imati časove vežbi naredne nedelje zbog bolesti asistenta. Informacije o
+                      nadoknadi će biti objavljene naknadno. Za sva pitanja, obratiti se mejlom asistentu Filipu Vidojeviću.
+                 </p>
+		 <p class='datum_objavljivanja'> 09.02.2020. </p>
+            </div>
+
+	    <div class="obavestenje">
+	         <h4> Predavanja za tok 104 </h4>
+                      Predavanja neće biti održana 10.02.2020. Termin nadoknade biće dogovren sa
+                      studentima.
+                 <p class='datum_objavljivanja'> 06.02.2020. </p>
+            </div>
+
+            <div class="obavestenje">
+                 <h4> Vežbe za grupu 1o2a </h4>
+                 <p>  Grupa 1o2a neće imati časove vežbi sutra, 06.02.2020. Termin nadoknade će biti u toku sledeće
+                      nedelje i biće naknadno objavljen.
+                 </p>
+		 <p class='datum_objavljivanja'> 05.02.2020. </p>
+            </div>
+
+            <div class="obavestenje">
+                 <h4> Vežbe za grupu 1o1a </h4>
+                 <p>  Grupa 1o1a neće imati časove vežbi sutra, 06.02.2020. Informacije o nadoknadi će biti objavljene
+                      naknadno. Za sva pitanja, obratiti se mejlom asistentu Filipu Vidojeviću.
+                 </p>
+		 <p class='datum_objavljivanja'> 05.02.2020. </p>
+            </div>
+
+<!--
+                <div class="obavestenje">
+                    <h4> Ukupni rezultati ispita u roku Januar 1 - tok 1o1 </h4>
+
+                    <p>Ukupni rezultati ispita za tok 1o1 se mogu pronaći <a
+                            href="/2019/rezultati/jan1/101_ukupni_rez.pdf">ovde</a>.</p>
+                    <p>Termin upisa ocena je u petak, 24.01.2020. u 16h u zbornici. </p>
+                    <p class='datum_objavljivanja'>23.01.2020.</p>
+                </div>
+
+
+                <div class="obavestenje">
+                    <h4> Ukupni rezultati januarskog ispita - tokovi 1O2,
+                    1O3 i
+                    1O4</h4>
+                    <p> Ovde se mogu naći ukupni rezultati
+                        januarskog ispita za tokove
+                        <a href="/2019/rezultati/jan/p2m102.xls">1O2</a>,
+                        <a href="/2019/rezultati/jan/p2m103.xls">1O3</a> i
+                        <a href="/2019/rezultati/jan/p2m104.xls">1O4</a>.
+                        Termin upisa ocena će biti objavljen u toku naredne
+                        nedelje.
+                        <p class='datum_objavljivanja'>21. 01. 2020.</p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Rezultati praktičnog dela ispita - Januar 1 </h4>
+
+                    <ul>
+                        <li> 1. tok <br>
+                            <ul>
+                                <li> Rezultate praktičnog dela ispita možete videti <a
+                                        href="/2019/rezultati/jan1/101_prakticni.pdf">ovde</a>.
+                                </li>
+                            </ul>
+                        </li>
+                        <li> 2. tok <br>
+                            <ul>
+                                <li> Rezultate praktičnog dela ispita možete videti <a
+                                        href="/2019/rezultati/jan1/1o2_prakticni.pdf">ovde</a>.
+                                </li>
+                            </ul>
+                        </li>
+                        <li> 3. tok <br>
+                            <ul>
+                                <li> Rezultate praktičnog dela ispita možete videti <a
+                                        href="/2019/rezultati/jan1/1o3_prakticni.pdf">ovde</a>.
+                                </li>
+                            </ul>
+                        </li>
+                        <li> 4. tok <br>
+                            <ul>
+                                <li> Rezultate praktičnog dela ispita možete videti <a
+                                        href="/2019/rezultati/jan1/1o4_prakticni.pdf">ovde</a>.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <p> Uvid u radove kod Strahinje Stanojevića je putem mejla najkasnije do 24.01.2020. u 23:59</p>
+
+                    Legendu sa bojama po kojima je označeno ko je pregledao radove možete pronaći <a
+                        href="/2019/rezultati/boje.pdf">ovde</a>.
+
+                    <p class='datum_objavljivanja'>21.01.2020.</p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Teorija i
+                        kvalifikacioni u januarskom roku </h4>
+
+                    Rezultati teorijskog dela i kvalifikacionog zadatka za tokove:
+                    <a href="/2019/rezultati/jan/p2m102.xls">1O2</a>,
+                    <a href="/2019/rezultati/jan/p2m103.xls">1O3</a>
+                    i <a href="/2019/rezultati/jan/p2m104.xls">1O4</a>.
+
+                    <p class='datum_objavljivanja'>
+                        16. 01. 2020.</p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Praktični deo ispita (18.01.2020.) - Januar 1 </h4>
+                    <p>
+                        Svi studenti koji su ostvarili neophodan prag na teoriji i kvalifikacionom zadatku
+                        polažu praktični deo ispita 18.01.2020. u prvoj grupi sa početkom u 13h u zgradi na Studentskom trgu (učionica 718).
+                    </p>
+                    <p>
+                        Molimo sve studente da budu na lokaciji barem 15 minuta ranije kako bi bili raspoređeni
+                        po učionicama i kako bi ispit mogao da počne na vreme.
+                    </p>
+
+                    <p class="datum_objavljivanja"> 13.01.2020. </p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Rezultati pismenog dela u ispitnom roku Januar 1 - PS </h4>
+
+                    <ul>
+                        <li> 1. tok <br>
+                            <ul>
+                                <li> Rezultate teorijskog dela ispita možete videti <a
+                                     href="/2019/rezultati/jan1/101_teorija.pdf">ovde</a>.
+                                     <br>
+                                     Uvid u teorijske radove će biti održan sa upisom ocena. </li>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="http://poincare.matf.bg.ac.rs/~nevena_ciric/101.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                        <li> 2. tok <br>
+                            <ul>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="http://poincare.matf.bg.ac.rs/~nevena_ciric/1o2_kvalifikacioni.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                        <li> 3. tok <br>
+                            <ul>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="http://poincare.matf.bg.ac.rs/~nevena_ciric/1o3_kvalifikacioni.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                        <li> 4. tok <br>
+                            <ul>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="http://poincare.matf.bg.ac.rs/~nevena_ciric/1o4_kvalifikacioni.pdf">ovde</a>. </li>
+                           </ul>
+                        </li>
+
+	            </ul>
+
+                    <ul>
+                        <li>Uvid u radove kod Nikole Ajzenhamera je putem mejla najkasnije do 14.01.2020. u 23:59</li>
+	         	<li>Uvid u radove kod Nevene Ciric je 12.01.2020. u 12:30 na Trgu (kancelarija 716)</li>
+                    </ul>
+
+		    Legendu sa bojama po kojima je označeno ko je pregledao radove možete pronaći <a
+                        href="/2019/rezultati/jan1/boje_jan1_kvalifikacioni.pdf">ovde</a>.
+
+                    <p class="datum_objavljivanja"> 12.01.2020. </p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Pismeni deo ispita (11.01.2020.) - Januar 1 </h4>
+                    <p>
+                        Svi studenti koji su prijavili ispit u ispitnom roku Januar1-PS na servisu Hypatia
+                        i koji su popunili anketu za prijavu, polažu pismeni deo ispita 11.01.2020.
+                        u prvoj grupi sa početkom u 17h u zgradi na Studentskom trgu.
+                    </p>
+                    <p>
+                        Molimo sve studente da budu na lokaciji barem 15 minuta ranije kako bi bili raspoređeni
+                        po učionicama i kako bi ispit mogao da počne na vreme.
+                    </p>
+
+                    <p class="datum_objavljivanja"> 10.01.2020. </p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Prijava za pismeni deo ispita (11.1.2020.) - Januar 1 </h4>
+                    <p>
+                        Svi studenti koji žele da polažu ispit iz Programiranja 2 u ispitnom roku Januar 1, moraju
+                        prijaviti ispit u informacionom sistemu Hypatia i takođe, popuniti anketu koju je moguće pronaći
+                        na <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSfRn2bnHGCnLRw3q2K1dbIzXXpZx05JCjWeKf64RA7O2s7x_g/viewform?usp=sf_link"
+                            target="_blank">ovoj vezi</a>. Anketa je otvorena do četvrtka, 9. januara 2020. u 18:00.
+                    </p>
+
+                    <p class="datum_objavljivanja"> 30.12.2019. </p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Upis ocena za tokove 1O2, 1O3 i 1O4 </h4>
+
+                    <p>Upis ocena za tokove 1O2, 1O3 i 1O4 biće održan u
+                        petak u 10:30h u Siminoj 2. Upis nije neophodan, a
+                        moguće je upisati ocenu i kasnije u toku godine.</p>
+                    <p class='datum_objavljivanja'>01.10.2019.</p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Ukupni rezultati ispita u roku Septembar 2 - tok 1o1 </h4>
+
+                    <p>Ukupni rezultati ispita za tok 1o1 se mogu pronaći <a
+                            href="/2019/rezultati/sep2/1o1_ukupno.pdf">ovde</a>.</p>
+                    <p>Termin upisa ocena je u ponedeljak, 30.09. u 13h u Siminoj 2, ili u nekom kasnijem terminu u
+                        dogovoru sa predmetnim profesorom.</p>
+                    <p class='datum_objavljivanja'>29.09.2019.</p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Ukupni rezultati ispita septembar 2</h4>
+                    <p> Ovde se mogu naći ukupni rezultati
+                        ispita septembar 2 za tokove
+                        <a href="/2019/rezultati/sep2/p2m102.xls">1O2</a>,
+                        <a href="/2019/rezultati/sep2/p2m103.xls">1O3</a> i
+                        <a href="/2019/rezultati/sep2/p2m104.xls">1O4</a>.
+                        Termin upisa ocena će biti objavljen u toku naredne
+                        nedelje.
+                        <p class='datum_objavljivanja'>29. 09. 2019.</p>
+                </div>
+
+
+                <div class="obavestenje">
+                    <h4> Rezultati praktičnog dela ispita - Septembar 2 </h4>
+
+                    <ul>
+                        <li> 1. tok <br>
+                            <ul>
+                                <li> Rezultate praktičnog dela ispita možete videti <a
+                                        href="/2019/rezultati/sep2/1o1_prakticni.pdf">ovde</a> (ažurirano).
+                                </li>
+                            </ul>
+                        </li>
+                        <li> 2. tok <br>
+                            <ul>
+                                <li> Rezultate praktičnog dela ispita možete videti <a
+                                        href="/2019/rezultati/sep2/1o2_prakticni_ispravka.pdf">ovde</a> (ažurirano).
+                                </li>
+                            </ul>
+                        </li>
+                        <li> 3. tok <br>
+                            <ul>
+                                <li> Rezultate praktičnog dela ispita možete videti <a
+                                        href="/2019/rezultati/sep2/1o3_prakticni.pdf">ovde</a> (ažurirano).
+                                </li>
+                            </ul>
+                        </li>
+                        <li> 4. tok <br>
+                            <ul>
+                                <li> Rezultate praktičnog dela ispita možete videti <a
+                                        href="/2019/rezultati/sep2/1o4_prakticni_final.pdf">ovde</a> (ažurirano).
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <p>Uvid u radove:</p>
+                    <ul>
+                        <li> Strahinja Stanojević: nedelja 29.9. u 14h, mejlom ili ponedeljak, 30.9. u 13h </li>
+                        <li> Nikola Ajzenhamer: isključivo putem mejla do 29.9. u 18h </li>
+                        <li> Luka Živanović: isključivo putem mejla do 29.9. do 18h </li>
+                        <li> Nevena Ćirić: nedelju, 29.9. u 17h </li>
+                    </ul>
+
+                    Uvidi se održavaju u kabinetu 716 osim ako nije naznačeno drugačije.<br>
+                    Legendu sa bojama po kojima je označeno ko je pregledao radove možete pronaći <a
+                        href="/2019/rezultati/boje.pdf">ovde</a>.
+
+                    <p class='datum_objavljivanja'>28.09.2019.</p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Teorija i
+                        kvalifikacioni u roku Septembar
+                        2 </h4>
+
+                    Rezultati teorijskog dela i kvalifikacionog zadatka za tokove:
+                    <a href="/2019/rezultati/sep2/p2m102.xls">1O2</a>,
+                    <a href="/2019/rezultati/sep2/p2m103.xls">1O3</a>
+                    i <a href="/2019/rezultati/sep2/p2m104.xls">1O4</a>.
+
+                    <p class='datum_objavljivanja'>
+                        24. 09. 2019.</p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Prijava za praktični deo ispita (27.9.) - Septembar 2 </h4>
+                    <p> Mole se studenti koji planiraju izlazak na praktični deo ispita u roku Septembar 2 da popune
+                        prijavu
+                        koja se nalazi na <a href="https://forms.gle/8EcbGPrNsP9qM8A1A">ovoj adresi</a>. </p>
+                    <p> Prijava traje do četvrtka, 26.09.2019. u 18:00. </p>
+
+                    <p style="font-weight: bold;">
+                        Obratiti pažnju da je,
+                        <a href="http://poincare.matf.bg.ac.rs/~kmiljan/raspored/RASPORED_ISPITA_OKT_1819.pdf">prema
+                            ažuriranoj verziji rasporeda ispita</a>,
+                        praktični deo ispita pomeren na 27.09. u 17h.
+                    </p>
+
+                    <p class="datum_objavljivanja"> 23.09.2019. </p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Rezultati ispitnog roka Septembar 2 </h4>
+
+                    <ul>
+                        <li> 1. tok <br>
+                            <ul>
+                                <li> Rezultate teorijskog dela ispita možete videti <a
+                                        href="/2019/rezultati/sep2/1o1_teorija.pdf">ovde</a>. </li>
+                                <li> Uvid u teorijske radove će biti održan sa upisom ocena. </li>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="/2019/rezultati/sep2/1o1_kvalifikacioni.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                        <li> 2. tok <br>
+                            <ul>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="/2019/rezultati/sep2/p2_sept_2_kvalifikacioni.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                        <li> 3. tok <br>
+                            <ul>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="/2019/rezultati/sep2/1o3_kvalifikacioni.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                        <li> 4. tok <br>
+                            <ul>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="/2019/rezultati/sep2/1o4_kvalifikacioni.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul> Uvid u radove:
+                        <li> Strahinja Stanojević: sreda, 25.09.2019. u 11:00h. </li>
+                        <li> Nikola Ajzenhamer: sreda, 25.09.2019. u 10:00h. </li>
+                        <li> Nevena Ćirić: cetvrtak, 26.09.2019. u 14h. </li>
+                        <li> Nikola Simić: sreda, 25.09.2019. u 13:00. </li>
+                        <li> Luka Živanović: četvrtak, 26.09.2019. u 12:00., obavezno se najaviti putem emaila! </li>
+
+                        <br>
+                        Uvidi se održavaju u kabinetu 716 osim ukoliko nije naznačeno drugačije.
+                        <br />Legendu sa bojama po kojima je označeno ko je pregledao radove možete pronaći <a
+                            href="/2019/rezultati/boje.pdf">ovde</a>.
+
+                    </ul>
+                </div>
+                <div class="obavestenje">
+                    <h4> Pismeni deo ispita - Septembar 2 </h4>
+                    <p>
+                        Svi studenti koji su prijavili ispit u ispitnom roku Septembar 2 na servisu Hypatia
+                        i koji su popunili anketu za prijavu, polažu pismeni deo ispita 20.09.2019.
+                        u prvoj grupi sa početkom u 14h u zgradi na Studentskom trgu.
+                    </p>
+                    <p>
+                        Molimo sve studente da budu na lokaciji barem 15 minuta ranije kako bi bili raspoređeni
+                        po učionicama i kako bi ispit mogao da počne na vreme.
+                    </p>
+
+                    <p class="datum_objavljivanja"> 19.09.2019. </p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Prijava za pismeni deo ispita (20.9.) - Septembar 2 </h4>
+                    <p> Mole se studenti koji planiraju izlazak na pismeni deo ispita u roku Septembar 2 da popune
+                        prijavu
+                        koja se nalazi na <a href="https://forms.gle/iGRfNTQzXN7ckMgE8">ovoj adresi</a>. </p>
+                    <p> Prijava traje do četvrtka, 19.09.2019. u 18:00. </p>
+
+                    <p class="datum_objavljivanja"> 17.09.2019. </p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Ukupni rezultati septembarskog ispita </h4>
+                    <p> Ovde se mogu naći ukupni rezultati
+                        septembarskog ispita za tokove
+                        <a href="/2019/rezultati/sep1/p2m102.xls">1O2</a>,
+                        <a href="/2019/rezultati/sep1/p2m103.xls">1O3</a> i
+                        <a href="/2019/rezultati/sep1/p2m104.xls">1O4</a>.
+                        <p class='datum_objavljivanja'>17. 09. 2019.</p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Rezultati praktičnog dela ispita - Septembar 1 </h4>
+                    <ul>
+                        <li> 1. tok <br>
+                            <ul>
+                                <li> Rezultate praktičnog dela ispita možete videti <a
+                                        href="/2019/rezultati/sep1/1o1_prakticni.pdf">ovde</a>. </li>
+                                <li> Konačne ocene ispitnog roka septembar 1 možete videti <a
+                                        href="/2019/rezultati/sep1/1o1_ocene.pdf">ovde</a>. Upis ocena i uvid u
+                                    teorijske radove biće održani u petak, 20. septembra u 13:30 u zbornici (710/IV)
+                                </li>
+                            </ul>
+                        </li>
+                        <li> 2. tok <br>
+                            <ul>
+                                <li> Rezultate praktičnog dela ispita možete videti <a
+                                        href="/2019/rezultati/sep1/1o2_prakticni_2.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                        <li> 3. tok <br>
+                            <ul>
+                                <li> Rezultate praktičnog dela ispita možete videti
+                                    <a href="/2019/rezultati/sep1/1o3_prakticni.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                        <li> 4. tok <br>
+                            <ul>
+                                <li> Rezultate praktičnog dela ispita (sa izmenjenim brojem poena nakon uvida) možete
+                                    videti
+                                    <a href="/2019/rezultati/sep1/1o4_prakticni_nakon_uvida.pdf">ovde</a>.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul> Uvid u radove:
+                        <li> Strahinja Stanojević: sreda, 18.9. u 13h </li>
+                        <li> Nikola Simić: ponedeljak, 16.9. u 12h </li>
+                        <li> Luka Živanović: 17.9. u 16h</li>
+                        <li> Nikola Ajzenhamer: nedelja, 15.9. u 15h (<span style="font-weight: bold">u Jagićevoj
+                                (JAG2))</span>) ili putem mejla do 15.9. u 15h</li>
+                        <br>
+                        Uvidi se održavaju u kabinetu 716 osim ako nije naznačeno drugačije.
+                        <br />Legendu sa bojama po kojima je označeno ko je pregledao radove možete pronaći <a
+                            href="/2019/rezultati/boje.pdf">ovde</a>.
+
+                    </ul>
+
+                    <p class='datum_objavljivanja'>13.09.2019.</p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Septembar 1 - raspored po grupama za praktični deo ispita </h4>
+                    <p>
+                        Raspored po grupama možete pronaći na <a
+                            href="https://docs.google.com/spreadsheets/d/1jhnbnZ76Fk9U25z_8ahGFnPGyN6ScwVJCyNder_NLWU/edit?usp=sharing"
+                            target="_blank">ovoj adresi</a>.
+                    </p>
+                    <p>
+                        Svi studenti koji su zakasnili sa prijavom za praktični deo ispita neka pošalju mejl na adresu
+                        <span style="font-weight: bold;">nikola_ajzenhamer@math.rs</span>.
+                    </p>
+                    <p class='datum_objavljivanja'>
+                        10.09.2019.
+                    </p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Teorijski deo ispita za tok 1o1 </h4>
+                    <p> Rezultate teorijskog dela ispita možete pronaći <a
+                            href="/2019/rezultati/sep1/1o1_teorija.pdf">ovde</a>. Uvid u radove će biti održan u terminu
+                        upisa ocena. </p>
+                    <p class='datum_objavljivanja'>
+                        08. 09. 2019.</p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Teorija i
+                        kvalifikacioni u roku Septembar
+                        1 </h4>
+
+                    Rezultati teorijskog dela i kvalifikacionog zadatka za tokove:
+                    <a href="/2019/rezultati/sep1/p2m102.xls">1O2</a>,
+                    <a href="/2019/rezultati/sep1/p2m103.xls">1O3</a>
+                    i <a href="/2019/rezultati/sep1/p2m104.xls">1O4</a>.
+
+                    <p class='datum_objavljivanja'>
+                        06. 09. 2019.</p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Prijava za praktični deo ispita - Septembar 1 </h4>
+                    <p> Mole se studenti koji planiraju izlazak na praktični deo ispita u roku Septembar 1 da popune
+                        prijavu
+                        koja se nalazi na <a href="https://forms.gle/X1ETUjdaFDprnkEA6">ovoj adresi</a>. </p>
+                    <p style="font-weight: bolder"> Prijava traje do utorka, 10.09.2019. u 12:00. </p>
+
+                    <p class="datum_objavljivanja"> 06.09.2019. </p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Rezultati ispitnog roka Septembar 1 </h4>
+
+                    <ul>
+                        <li> 1. tok <br>
+                            <ul>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="/2019/rezultati/sep1/1o1_kvalifikacioni.pdf">ovde</a>. </li>
+
+                                <li> Svi studenti prvog toka dolaze na uvid kod Nikole Simića.</li>
+                            </ul>
+                        </li>
+                        <li> 2. tok <br>
+                            <ul>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="/2019/rezultati/sep1/1o2_kvalifikacioni_ispravka.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                        <li> 3. tok <br>
+                            <ul>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="/2019/rezultati/sep1/1o3_kvalifikacioni.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                        <li> 4. tok <br>
+                            <ul>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="/2019/rezultati/sep1/1o4_kvalifikacioni.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul> Uvid u radove:
+                        <li> Strahinja Stanojević: petak, 06.09.2019. u 09:30h. </li>
+                        <li> Nikola Ajzenhamer: ponedeljak, 09.09.2019. u 9h (<span style="font-weight: bolder">obavezno
+                                je najaviti se mejlom pre dolaska!!!</span>) </li>
+                        <li> Nikola Simić: ponedeljak, 09.09.2019. u 12h. </li>
+                        <li> Nevena Ćirić: 10.09.2019 u 15h </li>
+                        <li> Luka Živanović: Zbog zdravstvenih problema uvid će biti održan putem emaila. Rok za slanje
+                            10.09. 16:00h</li>
+                        Uvidi se održavaju u kabinetu 716.
+                        <br />Legendu sa bojama po kojima je označeno ko je pregledao radove možete pronaći <a
+                            href="/2019/rezultati/boje.pdf">ovde</a>.
+
+                    </ul>
+
+                    <p class='datum_objavljivanja'>04. 09. 2019.</p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Pismeni deo ispita - Septembar 1 </h4>
+                    <p> Pismeni deo ispita će biti održan u zgradi na Studentskom trgu, u učionicama 706, 821 i 830 sa
+                        početkom u 17h. </p>
+                    <p> Studenti bi trebalo da budu na lokaciji u 16:45 i da sačekaju asistente koji će ih rasporediti,
+                        kako bi ispit mogao da počne na vreme.</p>
+
+                    <p class="datum_objavljivanja"> 02.09.2019. </p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Rezultati ispita za tok 1o1 </h4>
+                    <p> Ukupni rezultati ispita i ocene za prvi tok se mogu naći na sledećem <a
+                            href="/2019/rezultati/jun2/1o1_ocene.pdf">linku</a>. Upis ocena će se održati u ponedeljak,
+                        15.6. u 13h u kabinetu u Siminoj 2. </p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Ukupni rezultati drugog junskog ispita </h4>
+                    <p> Ovde se mogu naći ukupni rezultati
+                        drugog junskog ispita za tokove
+                        <a href="/2019/rezultati/jun2/p2m102.xls">1O2</a>,
+                        <a href="/2019/rezultati/jun2/p2m103.xls">1O3</a> i
+                        <a href="/2019/rezultati/jun2/p2m104.xls">1O4</a>.
+                        <p class='datum_objavljivanja'>12. 07. 2019.</p>
+                </div>
+
+
+                <div class="obavestenje">
+                    <h4> Rezultati praktičnog dela ispita - Jun 2 </h4>
+                    <ul>
+                        <li> 1. tok <br>
+                            <ul>
+                                <li> Rezultate praktičnog dela ispita možete videti <a
+                                        href="/2019/rezultati/jun2/1o1_prakticni.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                        <li> 2. tok <br>
+                            <ul>
+                                <li> Rezultate praktičnog dela ispita možete videti <a
+                                        href="/2019/rezultati/jun2/1o2_prakticni.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                        <li> 3. tok <br>
+                            <ul>
+                                <li> Rezultate praktičnog dela ispita možete videti <a
+                                        href="/2019/rezultati/jun2/1o3_prakticni.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                        <li> 4. tok <br>
+                            <ul>
+                                <li> Rezultate praktičnog dela ispita možete videti <a
+                                        href="/2019/rezultati/jun2/1o4_novi.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul> Uvid u radove:
+                        <li> Strahinja Stanojević: četvrtak, 11.7.2019. u 9h </li>
+                        <li> Nikola Simić: četvrtak, 11.7.2019. u 11h </li>
+                        <li> Nevena Ćirić: petak, 12.07.2019. u 10h </li>
+                        <li> Luka Živanović: petak, 12.07.2019. u 17h</li>
+                        Uvidi se održavaju u kabinetu 716.
+                        <br />Legendu sa bojama po kojima je označeno ko je pregledao radove možete pronaći <a
+                            href="/2019/rezultati/boje.pdf">ovde</a>.
+
+                    </ul>
+
+                    <p class='datum_objavljivanja'>10. 07. 2019.</p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Raspored sedenja za praktični deo ispita - Jun 2 (spisak je ažuriran) </h4>
+                    <p> Mole se studenti da provere u kojoj učionici polažu praktični deo ispita u roku Jun 2 na
+                        rasporedu sedenja koji se nalazi na <a
+                            href="2019/organizacija/jun2/jun2-raspored-sedenja-prakticni.pdf">ovoj adresi</a>. </p>
+                    <p>Studenti bi trebalo da budu ispred učionica u 8:45 i da sačekaju asistente koji će ih
+                        rasporediti, kako bi ispit mogao da počne u 9:00.</p>
+
+                    <p class="datum_objavljivanja"> 06.07.2019. </p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Teorija i
+                        kvalifikacioni u roku Jun
+                        2 </h4>
+
+                    Rezultati teorijskog dela i kvalifikacionog zadatka za tokove:
+                    <a href="/2019/rezultati/jun2/p2m102.xls">1O2</a>,
+                    <a href="/2019/rezultati/jun2/p2m103.xls">1O3</a>
+                    i <a href="/2019/rezultati/jun2/p2m104.xls">1O4</a>.
+
+                    <p class='datum_objavljivanja'>
+                        05. 07. 2019.</p>
+                </div>
+
+                <div class="obavestenje">
+
+                    <h4> Jun 2, promena termina uvida u radove </h4>
+                    <p> Uvid u radove sa kvalifikacionog dela ispita kod asistenta Nikole Simića će se održati u
+                        predhodno zakazanom terminu, subota u 12h, ali sa promenjenom lokacijom, <b> na Studentskom
+                            Trgu</b>, u kabinetu 716.</p>
+
+                    <p class="datum_objavljivanja"> 04.07.2019. </p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Prijava za praktični deo ispita - Jun 2 </h4>
+                    <p> Mole se studenti koji planiraju izlazak na praktični deo ispita u roku Jun 2 da popune prijavu
+                        koja se nalazi na <a href="https://forms.gle/DmGto9iwzvJZK4tu7">ovoj adresi</a>. </p>
+                    <p> Prijava traje do subote, 06.07.2019. u 12:00. </p>
+
+                    <p class="datum_objavljivanja"> 03.07.2019. </p>
+                </div>
+
+
+                <div class="obavestenje">
+                    <h4> Rezultati ispitnog roka Jun 1 </h4>
+
+                    <ul>
+                        <li> 1. tok <br>
+                            <ul>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="/2019/rezultati/jun2/1o1_kvalifikacioni.pdf">ovde</a>. </li>
+                                <li> Rezultate teorijskog dela ispita mozete videti <a
+                                        href="/2019/rezultati/jun2/jul-teorija.pdf"> ovde </a> </li>
+                                <li> Uvid u teorijske radove 03.07.2019. u 18h u kabinetu u Siminoj ulici. </li>
+                            </ul>
+                        <li> 2. tok <br>
+                            <ul>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="/2019/rezultati/jun2/1o2_jun_2_kvalifikacioni.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                        <li> 3. tok <br>
+                            <ul>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="/2019/rezultati/jun2/1o3_jun_2_kvalifikacioni.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                        <li> 4. tok <br>
+                            <ul>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="/2019/rezultati/jun2/1o4_jun_2_kvalifikacioni.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul> Uvid u radove:
+                        <li> Strahinja Stanojević: subota, 06.07.2019. u 12h <b>U JAGICEVOJ</b>. </li>
+                        <li> Nikola Simić: subota, 06.07.2019. u 12h <b>na Trgu</b>. </li>
+                        <li> Nevena Ćirić: 06.07.2019 u 9h </li>
+                        <li> Nikola Ajzenhamer: petak, 05.07.2019. u 9h </li>
+                        <li> Luka Živanović: petak, 05.07.2019. u 12h </li>
+                        Uvidi se održavaju u kabinetu 716.
+                        <br />Legendu sa bojama po kojima je označeno ko je pregledao radove možete pronaći <a
+                            href="/2019/rezultati/boje.pdf">ovde</a>.
+
+                    </ul>
+
+                    <p class='datum_objavljivanja'>17. 06. 2019.</p>
+                </div>
+
+
+
+                <div class="obavestenje">
+                    <h4>Raspored polaganja pismenog dela ispita - Jun 2 (ažuriran je spisak!)</h4>
+                    <p>Raspored polaganja pismenog dela ispita u ispitnom roku Jun 2 (1.7.) možete pronaći na <a
+                            href="https://docs.google.com/spreadsheets/d/1sxUK0M2bUCx_fMnjvn2BeIgdOPXAO-h8oBZQYl7bd-U/edit?usp=sharing">ovoj
+                            adresi</a>. Pismeni ispit će početi u 14h, te se studenti mole da sačekaju asistente <span
+                            style="font-weight: bold">ispred</span> učionice u kojoj su raspoređeni, u 13:45.</p>
+
+                    <p class="datum_objavljivanja"> 30.06.2019. </p>
+                </div>
+
+                <div class="obavestenje">
+
+                    <h4> Ukupni rezultati junskog ispita </h4>
+                    <p> Ovde se mogu naći ukupni rezultati junskog ispita za tokove
+                        <a href="/2019/rezultati/jun1/p2m102.xls">1O2</a>, <a
+                            href="/2019/rezultati/jun1/p2m103.xls">1O3</a> i
+                        <a href="/2019/rezultati/jun1/p2m104.xls">1O4</a>.
+
+                        <p class='datum_objavljivanja'>27. 06. 2019.</p>
+
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Prijava za pismeni deo ispita (1.7.) - Jun 2 </h4>
+                    <p> Mole se studenti koji planiraju izlazak na pismeni deo ispita u roku Jun 2 da popune prijavu
+                        koja se nalazi na <a href="https://forms.gle/AJq8nMmMXSaBvJaJ7">ovoj adresi</a>. </p>
+                    <p> Prijava traje do subote, 29.06.2019. u 18:00. </p>
+
+                    <p class="datum_objavljivanja"> 26.06.2019. </p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Rezultati praktičnog dela ispita - Jun 1 </h4>
+                    <ul>
+                        <li> 1. tok <br>
+                            <ul>
+                                <li> Rezultate praktičnog dela ispita i preliminarne ocene možete videti <a
+                                        href="/2019/rezultati/jun1/1o1_ocene.pdf">ovde</a>. </li>
+                                <li>Upis ocena će se održati u petak, 28.6. u 14:30 u kabinetu u Siminoj ulici.</li>
+                            </ul>
+                        </li>
+                        <li> 2. tok <br>
+                            <ul>
+                                <li> Rezultate praktičnog dela ispita možete videti <a
+                                        href="/2019/rezultati/jun1/1o2_prakticni.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                        <li> 3. tok <br>
+                            <ul>
+                                <li> Rezultate praktičnog dela ispita (sa izmenama nakon uvida u radove) možete videti
+                                    <a href="/2019/rezultati/jun1/1o3_prakticni_nakon_uvida.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                        <li> 4. tok <br>
+                            <ul>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="/2019/rezultati/jun1/1o4_prakticni.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul> Uvid u radove:
+                        <li> Strahinja Stanojević: četvrtak, 27.6. u 9h </li>
+                        <li> Nikola Simić: petak, 28.6. u 13h </li>
+                        <li> Nevena Ćirić: 28.6. u 10h</li>
+                        <li> Nikola Ajzenhamer: petak, 28.6. u 12h ili putem mejla </li>
+                        Uvidi se održavaju u kabinetu 716.
+                        <br />Legendu sa bojama po kojima je označeno ko je pregledao radove možete pronaći <a
+                            href="/2019/rezultati/boje.pdf">ovde</a>.
+
+                    </ul>
+
+                    <p class='datum_objavljivanja'>25. 06. 2019.</p>
+                </div>
+
+
+                <div class="obavestenje">
+                    <h4> Raspored sedenja za praktični deo ispita - Jun 1 </h4>
+                    <p> Mole se studenti da provere u kojoj učionici polažu praktični deo ispita u roku Jun 1 na
+                        rasporedu sedenja koji se nalazi na <a
+                            href="2019/organizacija/jun1/Jun1-raspored-sedenja-prakticni.pdf">ovoj adresi</a>. </p>
+                    <p style="font-weight: bold;"> Posebno obratiti pažnju da neki studenti ispit polažu u zgradi u
+                        Jagićevoj ulici! </p>
+                    <p>Studenti bi trebalo da budu ispred učionica u 8:45 i da sačekaju asistente koji će ih
+                        rasporediti, kako bi ispit mogao da počne u 9:00.</p>
+
+                    <p class="datum_objavljivanja"> 21.06.2019. </p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Prijava za praktični deo ispita - Jun 1 </h4>
+                    <p> Mole se studenti koji planiraju izlazak na praktični deo ispita u roku Jun 1 da popune prijavu
+                        koja se nalazi na <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSfonT0k7fdLmOlF3ujk8EzBF7-7f2jX9hHB3yYFwn5ew-pFKQ/viewform?usp=sf_link">ovoj
+                            adresi</a>. </p>
+                    <p> Prijava traje do petka, 21.06.2019. u 18:00. </p>
+
+                    <p class="datum_objavljivanja"> 19.06.2019. </p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Rezultati naknadnog kolokvijuma </h4>
+                    <ul>
+                        Rezultate naknadnog kolokvijuma možete pronaći <a
+                            href="/2019/rezultati/klk/naknadni_kolokvijum.pdf">ovde</a>. Uvid u radove će biti u
+                        četvrtak, 20.6. u 10h u kabinetu 716 kod Nikole Ajzenhamer.
+                    </ul>
+
+                    <p class='datum_objavljivanja'>18. 06. 2019.</p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Rezultati ispitnog roka Jun 1 </h4>
+                    <ul>
+                        Rezultati teorijskog dela i kvalifikacionog zadatka za tokove:
+                        <a href="/2019/rezultati/jun1/p2m102.xls">1O2</a>,
+                        <a href="/2019/rezultati/jun1/p2m103.xls">1O3</a>
+                        i <a href="/2019/rezultati/jun1/p2m104.xls">1O4</a>.
+                    </ul>
+
+                    <p class='datum_objavljivanja'>
+                        18. 06. 2019.</p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Rezultati ispitnog roka Jun 1 </h4>
+                    <ul>
+                        <li> 1. tok <br>
+                            <ul>
+                                <li> Rezultate kvalifikacionog i teorijskog dela ispita možete videti <a
+                                        href="/2019/rezultati/jun1/1o1_sve.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                        <li> 2. tok <br>
+                            <ul>
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="/2019/rezultati/jun1/1o2_kvalifikacioni.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                        <li> 3. tok <br>
+                            <ul>
+
+
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="/2019/rezultati/jun1/1o3_kvalifikacioni.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                        <li> 4. tok <br>
+                            <ul>
+
+
+                                <li> Rezultate kvalifikacionog dela ispita možete videti <a
+                                        href="/2019/rezultati/jun1/1o4_kvalifikacioni.pdf">ovde</a>. </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul> Uvid u radove:
+                        <li> Strahinja Stanojević: četvrtak, 20.06.2019. u 12h. </li>
+                        <li> Nikola Simić: četvrtak, 20.6. u 12h </li>
+                        <li> Nevena Ćirić: 20.6. u 14h</li>
+                        <li> Nikola Ajzenhamer: četvrtak, 20.6. u 10h </li>
+                        <li> Luka Živanović: petak, 21.6. u 11h</li>
+                        Uvidi se održavaju u kabinetu 716.
+                        <br />Legendu sa bojama po kojima je označeno ko je pregledao radove možete pronaći <a
+                            href="/2019/rezultati/boje.pdf">ovde</a>.
+
+                    </ul>
+
+                    <p class='datum_objavljivanja'>17. 06. 2019.</p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4>Raspored polaganja pismenog dela ispita - Jun 1</h4>
+                    <p>Raspored polaganja pismenog dela ispita u ispitnom roku Jun 1 možete pronaći na <a
+                            href="https://docs.google.com/spreadsheets/d/1_Ru3ge11_pNiNQUEvrNq-CxyGQhyGSkNDEsJV243-rE/edit?usp=sharing">ovoj
+                            adresi</a> u kartici "Јун1 - ПИСМЕНИ". Pismeni ispit će početi u 17h, te se studenti mole da
+                        sačekaju asistente <span style="font-weight: bold">ispred</span> učionice u kojoj su
+                        raspoređeni, u 16:45.</p>
+
+                    <p class="datum_objavljivanja"> 13.06.2019. </p>
+                </div>
+
+
+                <div class="obavestenje">
+                    <h4> Promena termina vežbi za grupu 1o1B </h4>
+                    Vežbe će sutra biti održane na Trgu u RLAB-u 16-18h umesto u regularnom terminu.
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Dodatni čas vežbi za grupu 104A </h4>
+                    Dodatni čas kod Nevene Ćirić će se održati u četvrtak 30.05.2019. u 11h u učionici 821.
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Dodatni čas </h4>
+                    <p> Dodatni čas kod Strahinje će se održati u ponedeljak 27.5.2019. u 16h u učionici Jag2. Gradivo
+                        koje se obradjuje će
+                        biti utvrdjeno glasanjem na času shodno želji prisutnih ljudi.
+                        <p class="datum_objavljivanja"> 25.5.2019. </p>
+                </div>
+                <div class="obavestenje">
+                    <h4> Uvid u radove kod Strahinje Stanojevića </h4>
+                    <p> Uvid u radove će biti održan četvrtak 16.5.2019. u 10h u kabinetu 716. Radove je takođe
+                        moguće pogledati na časovima vežbi.
+                        <p class="datum_objavljivanja"> 14.5.2019. </p>
+                </div>
+                <div class="obavestenje">
+                    <h4> Uvid u radove kod Luke Živanovića</h4>
+                    <p> Uvid u radove će biti održan u petak 10.5. od 10h do 12h i od 14h do 15h u kabinetu 716. </p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Uvid u radove kod Nikole Simića </h4>
+                    <p> Uvid u radove će biti održan u četvrtak 9.5. u 13h u kabinetu 716. </p>
+                </div>
+                <div class="obavestenje">
+                    <h4> Uvid u radove kod Nikole Ajzenhamerа </h4>
+                    <p> Uvid u radove će biti održan u sredu 8.5.2019. 15-16h u kabinetu 716.
+                        <p class="datum_objavljivanja"> 5.5.2019. </p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Uvid u radove kod Nevene Ćirić </h4>
+                    <p> Uvid u radove će biti održan u utorak 7.5.2019. 16-17h u učionici 704.
+                        <p class="datum_objavljivanja"> 3.5.2019. </p>
+                </div>
+
+
+                <div class="obavestenje">
+                    <h4> Nadoknada za grupu 1o3 </h4>
+                    Nadoknada izgubljenog časa za grupu 1o3 kod Strahinje će biti održana u četvrtak 9.5.2019. u
+                    učionici 718 od 8h.
+                    <p class="datum_objavljivanja">
+                        03.05.2019. </p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Rezultati kolokvijuma</h4>
+                    <p> Ovde se mogu naći ukupni
+                        rezultati kolokvijuma za
+                        tokove <a href="2019/rezultati/klk/p2m102.xls">1O2</a>,
+                        <a href="2019/rezultati/klk/p2m103.xls">1O3</a> i
+                        <a href="2019/rezultati/klk/p2m104.xls">1O4</a>.</p>
+                    <p class="datum_objavljivanja">
+                        02.05.2019. </p>
+                </div>
+
+
+                <div class="obavestenje">
+                    <h4> Praktikum P3 - promena termina </h4>
+                    <p> U petak, 3.5. neće biti praktikuma kod asistenta Miodraga Radojevića. Termin nadoknade je
+                        naredni petak, 10.5. nakon redovnog časa, od 15 do 16h. </p>
+                    <p class="datum_objavljivanja"> 01.05.2019. </p>
+                </div>
+
+
+                <div class="obavestenje">
+                    <h4> Rezultati kolokvijuma </h4>
+                    <ul>
+                        <li> 1. tok <br>
+                            <ul>
+                                <li> Rezultate teorijskog dela kolokvijuma možete pogledati <a
+                                        href="/2019/rezultati/klk/1o1_teorija.pdf">ovde</a>. <br>
+                                    Uvid u radove kod profesorke Gordane Pavlović-Lažetić biće u četvrtak, 25.04. od
+                                    12:15h u kancelariji u Siminoj 2.
+                                </li>
+                                <li> Rezultate praktičnog dela kolokvijuma možete pogledati <a
+                                        href="/2019/rezultati/klk/1o1_zadaci.pdf">ovde</a>. <br>
+                                    Studenti čiji su rezultati obojeni ljubičastom bojom idu na uvid kod Nikole
+                                    Ajzenhamera, a ostali idu kod Strahinje. <br>
+                                    Termini uvida će biti objavljeni naknadno i biće nakon praznika. </li>
+                        </li>
+                    </ul>
+                    </li>
+                    <li> 2. tok <br>
+                        <ul>
+
+                            <li> Rezultate praktičnog dela kolokvijuma možete pogledati <a
+                                    href="/2019/rezultati/klk/1o2_zadaci.pdf">ovde. </a> <br>
+                                Studenti čiji su rezultati obojeni ljubičastom bojom idu na uvid kod Nikole Ajzenhamera,
+                                a ostali idu kod Strahinje. <br>
+                                Termini uvida će biti objavljeni naknadno i biće nakon praznika. </li>
+                        </ul>
+                    </li>
+                    <li> 3. tok <br>
+                        <ul>
+                            <li> Rezultate praktičnog dela kolokvijuma možete pogledati <a
+                                    href="/2019/rezultati/klk/1o3_zadaci.pdf">ovde. </a> <br>
+                                Studenti čiji su rezultati obojeni zutom bojom idu na uvid kod Nikole Simića, plavom
+                                bojom kod Luke Zivanovića, a ljubičastom bojom kod Nikole Ajzenhamera. <br>
+                                Termini uvida će biti objavljeni naknadno i biće nakon praznika. </li>
+                        </ul>
+                    </li>
+                    <li> 4. tok <br>
+                        <ul>
+                            <li> Rezultate praktičnog dela kolokvijuma možete pogledati <a
+                                    href="/2019/rezultati/klk/1o4_zadaci.pdf">ovde. </a> <br>
+                                Studenti čiji su rezultati obojeni zelenom bojom idu na vudi kod Nevene Cirić, plavom
+                                bojom kod Luke Zivanovića, a zutom bojom kod Nikole Simića. <br>
+                                Termini uvida će biti objavljeni naknadno i biće nakon praznika. </li>
+                        </ul>
+                    </li>
+                    <p class='datum_objavljivanja'> 24. 04. 2018.</p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Vežbe za grupu 101b </h4>
+                    <p> Umesto u petak 4. maja, vežbe će biti unapred održane u sredu 24. aprila u
+                        JAG3 9-11h. </p>
+                    <p class='datum_objavljivanja'> 22.04.2019. </p>
+                </div>
+
+                <div class="obavestenje">
+
+
+                    <h4> Predavanje u okviru RISK-a </h4>
+                    <p> Organizacija RISK u okviru Matematičkog faulteta organizuje vrlo zanimljivo predavanje o
+                        modernom programskom jeziku C i praktičnim primenama. Za vise informacija posetite sledeći <a
+                            href="http://risk.matf.bg.ac.rs/okupljanja.html"> link </a> </p>
+
+                    <p class='datum_objavljivanja'> 19. 04. 2019.</p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Promena termina praktikuma </h4>
+                    <p> P6 - Praktikum neće biti održan u terminu 22.4. Nadoknada će biti 8.5. od 9h u učionici RLAB.
+                    </p>
+
+                    <p class='datum_objavljivanja'> 18. 04. 2019.</p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Kolokvijum </h4>
+                    <p> Raspored studenata po učionicama možete pronaći <a
+                            href="2019/organizacija/kolokvijum/raspored.pdf">ovde</a>. Mole se studenti da se
+                        pridržavaju datog rasporeda. Obavezno poneti indeks sa sobom. </p>
+
+                    <p class='datum_objavljivanja'> 08. 04. 2019.</p>
+                </div>
+
+
+                <div class="obavestenje">
+                    <h4> Dodatni čas </h4>
+                    Dodatni čas vezan za rekurziju će biti održan u subotu 16.03.2019. u 13h. Nalazimo se na 4. spratu
+                    kako bismo videli koliko nas ima i kolika će nam učionica trebati.
+                    <p class='datum_objavljivanja'> 15.03.2019. </p>
+                </div>
+
+
+                <div class='obavestenje'>
+                    <h4> Nadoknada vežbi za grupu 104a </h4>
+                    <p> Nadoknada će biti održana u petak 15.03.2019. u 8:30 u učionici 830. </p>
+                    <p class='datum_objavljivanja'> 13.03.2019. </p>
+                </div>
+
+                <div class="obavestenje">
+                    <h4> Nadoknade časova vežbi i praktikuma </h4>
+                    <ul>
+                        <li> Nadoknada izgubljenog časa vežbi kod Strahinje za grupu 103b će biti održana u četvrtak
+                            28.2.2019. u 15h u Jag2. </li>
+                        <li> Nadoknada izgubljenog časa vežbi kod Strahinje za grupu 102b će biti održana u subotu
+                            2.3.2019. u 12h u učionici BIM. </li>
+                        <li> Nadoknada izgubljenih praktikuma kod Strahinje za grupe 104a i 104b će biti održana u
+                            subotu 2.3.2019. u 14h u učionici BIM. </li>
+                    </ul>
+                    <p class='datum_objavljivanja'> 26.02.2019. </p>
+                </div>
+                <div class='obavestenje'>
+                    <h4> Nadoknada vežbi za grupu 101b </h4>
+                    <p> Nadoknada će biti održana u sredu 27.02.2019. u 16h u učionici RLAB. </p>
+                    <p class='datum_objavljivanja'> 25.02.2019. </p>
+                </div>
+
+                <div class='obavestenje'>
+                    <h4> Rezultati dodatnog roka </h4>
+                    <dl>
+                        <dt> 183/2011, Ivana Milosavljević </dt>
+                        <dd>Teorija: 16,1 poena </dd>
+                        <dd> Kvalifikacioni: 5,5 poena</dd>
+                    </dl>
+                    <p> Praktični deo ispita će se održati u četvrtak, 28.2. sa početkom u 13:00 u učionici JAG2. </p>
+
+                    <p class='datum_objavljivanja'> 24. 02. 2019.</p>
+                </div>
+-->
+
+                <div class='obavestenje'>
+                    <h4> Početak novog semestra </h4>
+                    <p> Srećno! </p>
+
+                    <p class='datum_objavljivanja'> 05.02.2020.</p>
+                </div>
+
+            </div>
+            <!-- ################# OBAVESTENJA - KRAJ ##################### -->
+
+
+        </div>
+
+
+
+        <div id='podnozje'>
+            <span class='matf'>
+                Matematički fakultet, Univerzitet u Beogradu
+                <br />
+                školska 2019/20. godina
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
